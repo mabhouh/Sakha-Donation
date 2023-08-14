@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: white;
+}
+
+.contanier{
+    padding: 16px 20px 0 20px;
+    height: 170vh;
+    width: 375px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 16px;
+}
+
+.contanier .subtitle{
+    display: flex;
+    width: 335px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contanier .subtitle .left{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.contanier .subtitle svg{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.contanier .subtitle svg rect{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contanier .subtitle svg:hover rect{
+    fill: #669640;
+}
+
+.contanier .subtitle svg:hover path{
+    fill: white;
+}
+
+.contanier .subtitle svg path{
+    transition: 0.3s;
+}
+
+.contanier .subtitle svg:hover path{
+    transform: translateX(-4px);
+}
+
+.contanier .subtitle h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.contanier .subtitle p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#4D4D4D;
+    font-size: 14px;
+    font-style: normal;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.contanier .subtitle p svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    position: relative;
+    transition: 0.3s;
+    left: 4px;
+}
+
+.contanier .subtitle p:hover svg{
+    transform: translateX(4.5px);
+}
+
+.contanier .subtitle p:hover path{
+    fill: #669640;
+}
+
+ul.pass{
+    display: flex;
+    overflow: hidden;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+ul.pass li{
+    display: flex;
+    padding: 14px 24px;
+    height: 40px;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 8px;
+    color: #828282;
+    background: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+ul.pass li:hover{
+    color:#FFF;
+    background-color: #669640;
+}
+
+ul.pass li.active{
+    color: #FFF;
+    background: #8abe5e;
+    padding: 14px 24px;
+    transition: 0.3s;
+}
+
+ul.pass li.active:hover{
+    background: #669640;
+}
+
+form {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 16px;
+    margin: 16px 8px 0 0;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form div label{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13.5px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+form div label span{
+    color: red;
+}
+
+form div.a input{
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    width: 335px;
+    height: 48px;
+    padding: 14px 16px 14px 16px;
+    color: #828282;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+form div.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+form div.flex input{
+    width: 163px;
+    height: 48px;
+    position: relative;
+}
+
+svg.a {
+    display: flex;
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 130px;
+    cursor: pointer;
+}
+
+form div input::placeholder{
+    color: #828282;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.gender{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.gender label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gender input{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label.female{
+    padding-left: 40px;
+}
+
+.gender .group {
+    gap: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.contanier a.calculator-now {
+    position: fixed;
+    bottom: 0;
+    text-decoration: none;
+    margin-bottom: 90px;
+}
+
+.contanier a.calculator-now [type=submit]{
+    display: flex;
+    outline: none;
+    border: none;
+    width: 335px;
+    height: 48px;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 8px;
+    background: #8abe5e;
+    color: #FFF;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.4s;
+}
+
+.contanier a.calculator-now [type=submit]:hover{
+    background: #669640;
+}
+
+.bottom-nav {
+    width: 375px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px 8px 0px 0px;
+    background: #FFF;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.05);
+    padding: 16px 20px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-nav .icon{
+    cursor: pointer;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.bottom-nav .active{
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.bottom-nav .active svg path{
+    fill: #669640;
+}
+
+.bottom-nav .active span{
+    width: 21px;
+    height: 5px;
+    border-radius: 6px;
+    background: #669640;
+    top: 33px;
+    position: absolute;
+}
+
+.bottom-nav .icon.x path{
+    transition: 0.3s;
+}
+
+.bottom-nav .icon.x:hover path{
+    fill: #8abe5e;
+}
+
+.i{
+    display: none !important;
+}
+
+.hide{
+    display: none !important;
+}
+
+.show{
+    display: block !important;
+}
+
+.show2{
+    display: flex !important;
+    flex-direction: column;
+}
+
+.w-f{
+    width: 335px !important;
+}
+
+svg.a.aa2 {
+    margin-left: 300px;
+}
+
+.results{
+    display: none;
+}
+
+.results{
+    display: inline-flex;
+    height: 509px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+    margin: 50px 0 100px 0;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.result .head{
+    display: flex;
+    width: 335px;
+    height: 45px;
+    padding: 14px 16px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background: #FFF;
+}
+
+.result .head p {
+    color: #0B0B0B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.result .sub-result p{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.contanier .item{
+    display: inline-flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 335px;
+    border-radius: 8px;
+    background: #FFF;
+    margin-top: 16px;
+}
+
+.contanier .item img{
+    width: 335px;
+    height: 200px;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+
+.contanier .item .desc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 8px;
+}
+
+.contanier .item .desc .xx p{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif   ;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contanier .item .desc .xxx{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+}
+
+.contanier .item div.progress{
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-color: #E0EAD8;
+}
+
+.contanier .item p{
+    color: #4D4D4D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.contanier span{
+    color: #669640;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contanier .donate{
+    display: flex;
+    width: 231px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 147px;
+    width: 100%;
+}
+
+.contanier .donate p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    color: #4D4D4D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.contanier .item div.progress span{
+    position: absolute;
+    width: 70%;
+    height: 4px;
+    background-color: #669640;
+    border-radius: 8px;
+}
+
+.contanier a.pay-now {
+    position: fixed;
+    bottom: 0;
+    text-decoration: none;
+    margin-bottom: 90px;
+}
+
+.contanier a.pay-now [type=submit]{
+    display: flex;
+    outline: none;
+    border: none;
+    width: 335px;
+    height: 48px;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 8px;
+    background: #8abe5e;
+    color: #FFF;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.4s;
+}
+
+.contanier a.pay-now [type=submit]:hover{
+    background: #669640;
+}

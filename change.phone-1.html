@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/change.phone-1.css">
+    <title>Verify</title>
+</head>
+<body>
+    <section class="contanier verify">
+        <div class="intro">
+            <div class="arrow">
+                <a href="profile.html"><img src="imgs/Arrow - Left.png" alt=""></a>
+            </div>
+    
+            <div class="header">
+                <h1>Change Your Phone No.</h1>
+                <p>+971 55 253 0438</p>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="verify-brand">
+                <p>We’ve sent you a verification code to<br><span>+971 55 253 0438</span></p>
+            </div>
+    
+            <div class="otp">
+                <input type="text" name="otp">
+                <input type="text" name="otp">
+                <input type="text" name="otp">
+                <input type="text" name="otp">
+            </div>
+
+            <div class="send-code">
+                <p>00:<span>59</span> sec</p>
+                <p>Send New Code!</p>
+            </div>
+            
+            <div class="btns">
+                <a href="change.phone-2.html">CONTINUE</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let second = document.querySelector('.send-code span')
+        let counter = setInterval(() => {
+            second.textContent = second.textContent - 1
+            if(second.textContent == 0){
+                clearInterval(counter)
+                document.querySelector('.send-code p').classList.add('complete')
+                document.querySelectorAll('.send-code p')[1].style.color = '#2F80ED'
+                document.querySelectorAll('.send-code p')[1].style.cursor = 'pointer'
+            }
+        },1000)
+    </script>
+</body>
+</html>

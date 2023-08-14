@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: rgba(33, 209, 71, 0.658);
+}
+
+.contanier{
+    padding: 16px 20px 0 20px;
+    height: 100%;
+    width: 375px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.contanier .subtitle{
+    display: flex;
+    width: 335px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contanier .subtitle .left{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.contanier .subtitle svg{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.contanier .subtitle svg rect{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contanier .subtitle svg:hover rect{
+    fill: #669640;
+}
+
+.contanier .subtitle svg:hover path{
+    fill: white;
+}
+
+.contanier .subtitle svg path{
+    transition: 0.3s;
+}
+
+.contanier .subtitle svg:hover path{
+    transform: translateX(-4px);
+}
+
+.contanier .subtitle h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.contanier .subtitle p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#4D4D4D;
+    font-size: 14px;
+    font-style: normal;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.contanier .subtitle p svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    position: relative;
+    transition: 0.3s;
+    left: 4px;
+}
+
+.contanier .subtitle p:hover svg{
+    transform: translateX(4.5px);
+}
+
+.contanier .subtitle p:hover path{
+    fill: #669640;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.profile-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 35px;
+    width: 335px;
+}
+
+.profile-data .uploda-image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.profile-data .uploda-image img{
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    padding: 16px 7px 0 7px;
+}
+
+.profile-data .uploda-image .round{
+    position: absolute;
+    bottom: 0;
+    left: 45px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    line-height: 33px;
+    overflow: hidden;
+    background-color: #EFF4EB;
+    border-radius: 50%;
+}
+
+.profile-data .uploda-image .round svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 4.5px;
+    left: 5.5px;
+}
+
+.p-info,
+.c-info,
+.s-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+}
+
+.s-info{
+    margin-bottom: 70px;
+}
+
+.p-info div,
+.c-info div,
+.s-info div{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+.content:last-child{
+    align-items: flex-start;
+}
+
+.profile-data  .content div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-data  .c-info .content  div:first-child{
+    margin-top: 5px;
+}
+
+.profile-data  .c-info .content .email p:first-child{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.profile-data  .c-info .content .email{
+    display: flex;
+    width: 335px;
+    height: 48px;
+    padding: 14px 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background: #EDEDED;
+}
+
+.profile-data  .c-info .content  .email .verify{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-data  .c-info .head-content .email .verify p{
+    color: #669640;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.profile-data  .c-info .content p.change{
+    color: var(--balck-white-black, #000);
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.profile-data  .c-info .content p.change:hover{
+    color: rgb(0, 98, 160);
+}
+
+.profile-data  .p-info div label span{
+    color: #93000F;
+}
+
+.countryy{
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    flex-direction: row !important;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.country p.number{
+    margin-left: 8px;
+}
+
+.profile-data .p-info div .choose{
+    flex-direction: row;
+    gap: 8px;
+    display: flex;
+}
+
+.profile-data .p-info div input,
+.profile-data .c-info div input{
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    width: 335px;
+    padding: 14px 16px 14px 16px;
+}
+
+.profile-data .p-info div input[type=phone],
+.profile-data .c-info div input[type=phone]{
+    padding: 14px 16px 14px 100px;
+}
+
+.profile-data .p-info div .choose div{
+    width: 163.5px;
+    height: 48px;
+    position: relative;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.profile-data .p-info div .choose div p {
+    position: relative;
+    color: #828282;
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.profile-data .p-info div .choose div svg{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    top: 28%;
+}
+
+.profile-data .c-info .phone{
+    position: relative;
+}
+
+.profile-data .c-info .phone .phone-choose{
+    position: absolute;
+    background-color: #EDEDED;
+    margin-left: 9px;
+    width: 81px;
+    height: 32px;
+    top: 34px;
+    gap: 9px;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 4px;
+}
+
+.profile-data .c-info .phone .phone-choose p{
+    color: #4D4D4D;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-data .c-info .phone .phone-choose svg:first-of-type{
+    margin-left: 5px;
+}
+
+.profile-data .p-info .group{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 16px;
+}
+
+.profile-data .p-info .group .choose{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-data .p-info .group .choose p{
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.head-content p{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    display: flex;
+    align-items: flex-start;
+}
+
+svg.unselect rect{
+    fill: #DBDBDB;
+}
+
+svg.unselect path{
+    fill: #DBDBDB;
+}
+
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    width: 335px;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.fields .field{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 105px;
+    height: 105px;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fields .field:hover{
+    background-color: #0062A0;
+    color: #FFF;
+}
+
+.fields .field p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    color: #000;
+    font-weight: 400;
+    margin-top: 10px;
+    line-height: normal;
+    transition: 0.3s;
+}
+
+.fields .field:hover p{
+    color: #FFF;
+}
+
+.save{
+    display: inline-flex;
+    height: 84px;
+    padding: 16px 20px 24px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px 8px 0px 0px;
+    background: #FFF;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+a.save-now{
+    text-decoration: none;
+    width: 100%;
+}
+
+a.save-now [type=submit]{
+    display: flex;
+    outline: none;
+    border: none;
+    width: 335px;
+    height: 48px;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 8px;
+    background: #8abe5e;
+    color: #FFF;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.4s;
+}

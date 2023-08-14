@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: rgb(224, 94, 94);
+}
+
+a {
+    text-decoration: none;
+}
+
+.contanier{
+    padding: 16px 20px;
+    height: 100%;
+    width: 375px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.contanier .links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.contanier .links p{
+    color: #0B0B0B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.contanier .links div{
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contanier .links svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contanier .links svg rect,
+.contanier .links svg ellipse{
+    transition: 0.3s;
+}
+
+.contanier .links svg:hover rect{
+    fill: #669640;
+}
+
+.contanier .links svg:hover ellipse,
+.contanier .links svg:hover path{
+    fill: white;
+}
+
+.contanier .layout{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 60px;
+}
+
+.contanier .layout .option{
+    display: flex;
+    width: 335px;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.03);
+}
+
+.contanier .layout .profile{
+    display: flex;
+    width: 319px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.contanier .layout .profile .details{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contanier .layout .profile .details .detail{
+    gap: 8px;
+}
+
+.contanier .layout .profile .detail,
+.contanier .layout .profile .d{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.contanier .layout .profile .details p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+.contanier .layout .profile .d p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+.contanier .layout .profile .details p:first-child{
+    color: #000;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.contanier .layout .profile .details p:last-child{
+    color: #8A91A8;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.contanier .layout .profile .d p:first-child{
+    color: #000;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.contanier .layout .profile .d p:last-child{
+    color: #8A91A8;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.contanier .layout .option:first-child .profile svg{
+    cursor: pointer;
+}
+
+.contanier .layout .option:first-child .profile path{
+    fill: #8abe5e;
+    transition: 0.3s;
+}
+
+.contanier .layout .option:first-child .profile svg:hover path{
+    fill: #669640;
+}
+
+.contanier .layout .profile a{
+    display: flex;
+    width: 126px;
+    height: 40px;
+    text-decoration: none;
+    padding: 14px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #EFF4EB;
+    color: #8abe5e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12.5px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    transition: 0.3s;
+}
+
+.contanier .layout .profile a:hover{
+    color: #669640;
+}
+
+.contanier .layout .profile a.sponsor{
+    color: #0063a0c4;
+    background-color: #E7EFF4;
+}
+
+.contanier .layout .profile a.sponsor:hover{
+    color: #0062A0;
+}
+
+.contanier .layout .profile a.apply{
+    color: #e29735d3;
+    background-color: #FCF4EA;
+}
+
+.contanier .layout .profile a.apply:hover{
+    color: #E29835;
+}
+
+.contanier .frames{
+    display: flex;
+    width: 335px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-radius: 8px;
+    background: #FFF;
+}
+
+.contanier .frames .frame{
+    display: flex;
+    width: 303px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contanier .frame .d{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.contanier .frame .d p{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+.contanier .frames span{
+    width: 303px;
+    height: 1px;
+    background: #EFF0F1;    
+}
+
+.contanier .frame svg:last-child path{
+    transition: 0.5s;
+}
+
+.contanier .frame:hover svg:last-child rect{
+    fill: #669640;
+}
+
+.contanier .frame:hover svg:last-child path{
+    transform: translateX(3.5px);
+    fill: #FFF;
+}
+
+.contanier .layout .frames:last-child .frame p{
+    color: #93000F;
+
+}
+
+
+.bottom-nav {
+    width: 375px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px 8px 0px 0px;
+    background: #FFF;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.05);
+    padding: 16px 20px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-nav .icon{
+    cursor: pointer;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.bottom-nav .active{
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.bottom-nav .active svg path{
+    fill: #669640;
+}
+
+.bottom-nav .active span{
+    width: 21px;
+    height: 5px;
+    border-radius: 6px;
+    background: #669640;
+    top: 33px;
+    position: absolute;
+}
+
+.bottom-nav .icon.x path{
+    transition: 0.3s;
+}
+
+.bottom-nav .icon.x:hover path{
+    fill: #8abe5e;
+}

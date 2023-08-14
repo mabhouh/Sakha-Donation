@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: white;
+}
+
+.contanier{
+    padding: 30px 20px 20px 20px;
+    height: 100vh;
+    width: 375px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.arrow{
+    display: inline-flex;
+    align-items: flex-start;
+    position: relative;
+    top: -8px;
+    left: -42px;
+    gap: 10px;
+}
+.arrow .img {
+    padding: 8px;
+    background: #FFF;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 8px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+
+.arrow img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    transition: 0.3s;
+}
+
+.arrow img:hover{
+    transform: translateX(-4.5px);
+}
+
+.header{
+    top: 5px;
+    position: relative;
+}
+
+.header h1{
+    color: #0B0B0B;
+    font-weight: 900;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.interest .fields {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    width: 335px;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.interest .fields .field{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 105px;
+    height: 105px;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.interest .fields .field:hover{
+    background-color: #0062A0;
+    color: #FFF;
+}
+
+.interest .fields .field p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    color: #000;
+    font-weight: 400;
+    margin-top: 10px;
+    line-height: normal;
+    transition: 0.3s;
+}
+
+.interest .fields .field:hover p{
+    color: #FFF;
+}
+
+.interest .fields .field svg{
+    margin-top: 10px;
+}
+
+.interest .submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 143px;
+    background-color: #FFF;
+    width: 375px;
+    bottom: 0;
+    border-radius: 8px;
+    position: fixed;
+    padding: 16px 20px;
+}
+.interest .submit a{
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 15px 20px;
+    text-decoration: none;
+    background-color: #8abe5e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+.interest .submit a:hover{
+    background-color: #669640;
+}

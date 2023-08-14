@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: white;
+}
+
+.contanier{
+    padding: 16px 20px 0 20px;
+    height: 130vh;
+    width: 375px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 8px;
+}
+
+.contanier .subtitle{
+    display: flex;
+    width: 335px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.contanier .subtitle .left{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.contanier .subtitle svg{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.contanier .subtitle svg rect{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contanier .subtitle svg:hover rect{
+    fill: #669640;
+}
+
+.contanier .subtitle svg:hover path{
+    fill: white;
+}
+
+.contanier .subtitle svg path{
+    transition: 0.3s;
+}
+
+.contanier .subtitle svg:hover path{
+    transform: translateX(-4px);
+}
+
+.contanier .subtitle h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.contanier .subtitle p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#4D4D4D;
+    font-size: 14px;
+    font-style: normal;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.contanier .subtitle p svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    position: relative;
+    transition: 0.3s;
+    left: 4px;
+}
+
+.contanier .subtitle p:hover svg{
+    transform: translateX(4.5px);
+}
+
+.contanier .subtitle p:hover path{
+    fill: #669640;
+}
+
+.contanier .subtitle p:hover{
+    color: #669640;
+}
+
+.contanier .subtitle .add a{
+    display: flex;
+    width: 104px;
+    height: 40px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #E7EFF4;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0063a0c4;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: 0.3s;
+}
+
+.contanier .subtitle .add a:hover{
+    color: #0062A0;
+}
+
+.contanier .wallets{
+    display: flex;
+    width: 335px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.03);
+}
+
+.contanier .wallet{
+    display: flex;
+    width: 303px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contanier .wallet .detalies{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.contanier .wallet .detalies .m{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contanier .wallet .detalies .m p.title{
+    color: #0B0B0B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contanier .wallet .detalies .m p.sub-title{
+    color: #0B0B0B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+input[type="radio"] {
+    position: absolute;
+    right: 40px;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contanier .wallets span.line{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #EDEDED;
+}
+
+.contanier a.donate-now{
+    background: #FFF;
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.05);
+    padding: 16px 20px;
+    position: fixed;
+    bottom: 0;
+    text-decoration: none;
+}
+
+.contanier a.donate-now [type=submit]{
+    display: flex;
+    outline: none;
+    border: none;
+    width: 335px;
+    height: 48px;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 8px;
+    background: #8abe5e;
+    color: #FFF;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.4s;
+}
+
+.contanier a.donate-now [type=submit]:hover{
+    background: #669640;
+}

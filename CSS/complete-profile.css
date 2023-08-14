@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: white;
+}
+
+.contanier{
+    padding: 30px 20px 20px 20px;
+    height: 118vh;
+    width: 375px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.arrow{
+    display: inline-flex;
+    align-items: flex-start;
+    position: relative;
+    top: -8px;
+    left: -53px;
+    gap: 10px;
+}
+
+.arrow .img {
+    padding: 8px;
+    background: #FFF;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 8px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+
+.arrow img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.arrow img:hover{
+    transform: translateX(-4.5px);
+}
+
+.header {
+    top: 5px;
+    position: relative;
+}
+
+.header h1{
+    color: #0B0B0B;
+    font-weight: 900;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.profile-data .uploda-image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    width: 60px;
+    height: 60px;
+}
+
+.profile-data .uploda-image img{
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    padding: 16px 7px 0 7px;
+}
+
+.profile-data .uploda-image .round{
+    position: absolute;
+    bottom: 0;
+    left: 45px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    line-height: 33px;
+    overflow: hidden;
+    background-color: #4D4D4D;
+    border-radius: 50%;
+}
+
+.profile-data .uploda-image .round img{
+    background-color: #4D4D4D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -10.5px;
+    left: -1.5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.profile-data  form div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-data  form div label span{
+    color: red;
+}
+
+.profile-data form div .choose{
+    flex-direction: row;
+    gap: 10px;
+}
+
+.profile-data form div input{
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    width: 335px;
+    padding: 14px 16px 14px 16px;
+}
+
+.profile-data form div input[type=phone]{
+    padding: 14px 16px 14px 100px;
+}
+
+.profile-data form div .choose div{
+    width: 163.5px;
+    height: 48px;
+    position: relative;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+.profile-data form div .choose div p {
+    position: relative;
+    color: #828282;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.profile-data form div .choose div svg{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    top: 34%;
+}
+
+.profile-data form .phone{
+    position: relative;
+}
+
+.profile-data form .phone .phone-choose{
+    position: absolute;
+    background-color: #EDEDED;
+    margin-left: 9px;
+    width: 81px;
+    height: 32px;
+    top: 34px;
+    gap: 9px;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 4px;
+}
+
+.profile-data form .phone .phone-choose p{
+    color: #4D4D4D;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-data form .phone .phone-choose svg:first-of-type{
+    margin-left: 5px;
+}
+
+.profile-data .gender{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    left: -80px;
+    margin-top: 10px;
+}
+
+.profile-data .gender label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-data .gender input{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label.female{
+    padding-left: 40px;
+}
+
+.profile-data .x{
+    background-color: #FFF;
+    width: 375px;
+    bottom: 0;
+    border-radius: 8px;
+    position: fixed;
+    padding: 16px 20px;
+}
+
+.profile-data .submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-data .submit{
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 14px 16px 14px 16px;
+    background-color:#8abe5e;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.profile-data .submit:hover{
+    background-color:#669640;
+}
+
+.profile-data .submit a{
+    width: 87px;
+    height: 25px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    text-align: center; 
+}
+
+
+

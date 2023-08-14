@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/complete-profile.css">
+    <title>Profile Data</title>
+</head>
+<body>
+    <section class="contanier profile-data">
+        <div class="arrow">
+            <div class="img">
+                <a href="verify.html"><img src="imgs/Arrow - Left.png" alt=""></a>
+            </div>
+            <div class="header">
+                <h1>Your Profile Data</h1>
+            </div>
+        </div>
+        <div class="uploda-image">
+            <img src="/imgs/Frame 101587.png" alt="">
+            <div class="round">
+                <img src="/imgs/solar_camera-bold-duotone.png" alt="">
+            </div>
+        </div>
+        
+        <form method="post">
+            <div>
+                <label>Full Name <span>*</span></label>
+                <input type="text" name="name" placeholder="Type your name" required>
+            </div>
+            <div>
+                <label>Your Email <span>*</span></label>
+                <input type="email" name="email" placeholder="Type your email" required>
+            </div>
+            <div class="phone">
+                <label>Phone Number <span>*</span></label>
+                <input type="phone" name="phone" required>
+                <div class="phone-choose">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16" fill="none">
+                        <path d="M19.5556 0H5.5V5.53846H22V2.46154C22 1.8087 21.7425 1.1826 21.284 0.720968C20.8256 0.25934 20.2039 0 19.5556 0Z" fill="#068241"/>
+                        <path d="M5.5 5.53846H22V10.4615H5.5V5.53846Z" fill="#EEEEEE"/>
+                        <path d="M5.5 16H19.5556C20.2039 16 20.8256 15.7407 21.284 15.279C21.7425 14.8174 22 14.1913 22 13.5385V10.4615H5.5V16Z" fill="#141414"/>
+                        <path d="M2.44444 0C1.79614 0 1.17438 0.25934 0.715961 0.720968C0.257539 1.1826 0 1.8087 0 2.46154V13.5385C0 14.1913 0.257539 14.8174 0.715961 15.279C1.17438 15.7407 1.79614 16 2.44444 16H5.5V0H2.44444Z" fill="#EC2028"/>
+                    </svg>
+                   <p>+971</p>
+                </div>
+            </div>
+            <div>
+                <label>Location <span>*</span></label>
+                <div class="choose">
+                    <div>
+                        <p class="country">Country</p>
+         
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none" class="country-bar">
+                            <path d="M11.369 16.6308C11.311 16.5743 11.063 16.3609 10.859 16.1622C9.576 14.9971 7.476 11.9576 6.835 10.3668C6.732 10.1252 6.514 9.51437 6.5 9.18802C6.5 8.8753 6.572 8.5772 6.718 8.29274C6.922 7.93814 7.243 7.65368 7.622 7.49781C7.885 7.39747 8.672 7.2416 8.686 7.2416C9.547 7.08573 10.946 7 12.492 7C13.965 7 15.307 7.08573 16.181 7.21335C16.195 7.22796 17.173 7.38383 17.508 7.55431C18.12 7.86702 18.5 8.47784 18.5 9.13151L18.5 9.18802C18.485 9.61374 18.105 10.509 18.091 10.509C17.449 12.0141 15.452 14.9834 14.125 16.1768C14.125 16.1768 13.784 16.5129 13.571 16.659C13.265 16.887 12.886 17 12.507 17C12.084 17 11.69 16.8724 11.369 16.6308Z" fill="#828282"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="city">City</p>
+       
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none" class="city-bar">
+                            <path d="M11.369 16.6308C11.311 16.5743 11.063 16.3609 10.859 16.1622C9.576 14.9971 7.476 11.9576 6.835 10.3668C6.732 10.1252 6.514 9.51437 6.5 9.18802C6.5 8.8753 6.572 8.5772 6.718 8.29274C6.922 7.93814 7.243 7.65368 7.622 7.49781C7.885 7.39747 8.672 7.2416 8.686 7.2416C9.547 7.08573 10.946 7 12.492 7C13.965 7 15.307 7.08573 16.181 7.21335C16.195 7.22796 17.173 7.38383 17.508 7.55431C18.12 7.86702 18.5 8.47784 18.5 9.13151L18.5 9.18802C18.485 9.61374 18.105 10.509 18.091 10.509C17.449 12.0141 15.452 14.9834 14.125 16.1768C14.125 16.1768 13.784 16.5129 13.571 16.659C13.265 16.887 12.886 17 12.507 17C12.084 17 11.69 16.8724 11.369 16.6308Z" fill="#828282"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="gender">
+            <label>Gender</label>
+            <div class="group">
+                <label>
+                    <input type="radio" value="male" name="Gender">
+                    Male
+                    <span></span>
+                </label>
+
+                <label class="female">
+                    <input type="radio" value="female" name="Gender">
+                    Female
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        
+        <div class="x">
+            <div class="submit">
+                <a href="interest.html">CONTINUE</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

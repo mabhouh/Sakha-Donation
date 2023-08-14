@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: white;
+}
+
+.contanier{
+    padding: 16px 20px 0 20px;
+    height: 100%;
+    width: 375px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 16px;
+}
+
+.contanier .subtitle{
+    display: flex;
+    width: 335px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contanier .subtitle .left{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.contanier .subtitle svg{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.contanier .subtitle svg rect{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contanier .subtitle svg:hover rect{
+    fill: #669640;
+}
+
+.contanier .subtitle svg:hover path{
+    fill: white;
+}
+
+.contanier .subtitle svg path{
+    transition: 0.3s;
+}
+
+.contanier .subtitle svg:hover path{
+    transform: translateX(-4px);
+}
+
+.contanier .subtitle h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.contanier .subtitle p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#4D4D4D;
+    font-size: 14px;
+    font-style: normal;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.contanier .subtitle p svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    position: relative;
+    transition: 0.3s;
+    left: 4px;
+}
+
+.contanier .subtitle p:hover svg{
+    transform: translateX(4.5px);
+}
+
+.contanier .subtitle p:hover path{
+    fill: #669640;
+}
+
+.contanier .selection{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.contanier .item,
+.contanier .item2{
+    display: inline-flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 335px;
+    border-radius: 8px;
+    background: #FFF;
+    cursor: pointer;
+    position: relative;
+}
+
+.contanier .item img,
+.contanier .item2 img{
+    width: 335px;
+    height: 200px;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+
+.contanier .item svg,
+.contanier .item2 svg{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    cursor: pointer;
+}
+
+.contanier .item svg.active rect,
+.contanier .item2 svg.active rect{
+    fill: #0062A0;
+    transition: 0.3s;
+}
+
+.contanier .item svg.active path,
+.contanier .item2 svg.active path{
+    fill: #FBFBFB;
+    transition: 0.3s;
+}
+
+.contanier .item .desc,
+.contanier .item2 .desc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 8px;
+}
+
+.contanier .item .desc .xx p,
+.contanier .item2 .desc .xx p{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif   ;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contanier .item .desc .xxx,
+.contanier .item2 .desc .xxx{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+}
+
+.contanier .item div.progress,
+.contanier .item2 div.progress{
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-color: #E0EAD8;
+}
+
+.contanier .item p,
+.contanier .item2 p{
+    color: #4D4D4D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.contanier span{
+    color: #669640;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contanier .donate{
+    display: flex;
+    width: 231px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 147px;
+    width: 100%;
+}
+
+.contanier .donate p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    color: #4D4D4D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.contanier .item div.progress span,
+.contanier .item2 div.progress span{
+    position: absolute;
+    width: 70%;
+    height: 4px;
+    background-color: #669640;
+    border-radius: 8px;
+}
+
+.pay{
+    display: inline-flex;
+    height: 84px;
+    padding: 16px 20px 24px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px 8px 0px 0px;
+    background: #FFF;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+a.pay-now {
+    text-decoration: none;
+    width: 100%;
+}
+
+a.pay-now [type=submit]{
+    display: flex;
+    outline: none;
+    border: none;
+    width: 335px;
+    height: 48px;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 8px;
+    background: #8abe5e;
+    color: #FFF;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.4s;
+}
+
+a.pay-now [type=submit]:hover{
+    background: #669640;
+}

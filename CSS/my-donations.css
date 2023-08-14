@@ -1,0 +1,505 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: rgba(245, 193, 49, 0.616);
+}
+
+.contanier{
+    padding: 16px 20px 0 20px;
+    height: 100%;
+    width: 375px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 16px;
+}
+
+.contanier .subtitle{
+    display: flex;
+    width: 335px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contanier .subtitle .left{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.contanier .subtitle svg{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.contanier .subtitle svg rect{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contanier .subtitle svg:hover rect{
+    fill: #669640;
+}
+
+.contanier .subtitle svg:hover path{
+    fill: white;
+}
+
+.contanier .subtitle svg path{
+    transition: 0.3s;
+}
+
+.contanier .subtitle svg:hover path{
+    transform: translateX(-4px);
+}
+
+.contanier .subtitle h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.contanier .subtitle p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#4D4D4D;
+    font-size: 14px;
+    font-style: normal;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.contanier .subtitle p svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    position: relative;
+    transition: 0.3s;
+    left: 4px;
+}
+
+.contanier .subtitle p:hover svg{
+    transform: translateX(4.5px);
+}
+
+.contanier .subtitle p:hover path{
+    fill: #669640;
+}
+
+.contanier section{
+    display: flex;
+    gap: 16px;
+    width: 335px;
+    flex-direction: column;
+}
+
+.contanier section .don-char{
+    display: flex;
+    width: 100%;
+    padding: 4px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.03);
+}
+
+.contanier section .don-char a{
+    display: flex;
+    text-decoration: none;
+    width: 161px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #F6F6F6;
+    color: #0B0B0B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contanier section .don-char a.active{
+    color: #0062A0;
+    text-align: center;
+    background: #e7eff4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 16px;
+}
+
+:root {
+    --dark-body: #4d4c5a;
+    --dark-main: #141529;
+    --dark-second: #79788c;
+    --dark-hover: #323048;
+    --dark-text: #f8fbff;
+
+    --light-body: #f3f8fe;
+    --light-main: #fdfdfd;
+    --light-second: #c3c2c8;
+    --light-hover: #edf0f5;
+    --light-text: #151426;
+
+    --blue: #0000ff;
+    --white: #fff;
+
+    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.calendar {
+    height: max-content;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    padding: 4px 4px 8px 4px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.03);
+}
+
+.calendar-header {
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.calendar-body{
+    width: 335px;
+}
+
+.calendar-week-day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 5px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.calendar-week-day div {
+    display: grid;
+    place-items: center;
+    color: var(--bg-second);
+}
+
+.calendar-days {
+    gap: 20px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    color: var(--color-txt);
+    left: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.calendar-days div {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    animation: to-top 1s forwards;
+}
+
+
+.calendar-days div.curr-date,
+.calendar-days div.curr-date:hover {
+    background-color: #0062A0;
+    color: var(--white);
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.calendar-days div.curr-date span {
+    display: none;
+}
+
+.month-picker {
+    padding: 5px 10px;
+    cursor: pointer;
+    background: #F6F6F6;
+    width: 161px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #F6F6F6;
+    color: #0B0B0B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    transition: 0.3s;
+}
+
+.month-picker:hover {
+    background-color: #669640;
+    color: #FFF;
+}
+
+.month-picker svg{
+    display: block;
+}
+.year-picker {
+    padding: 5px 10px;
+    cursor: pointer;
+    background: #F6F6F6;
+    width: 161px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background: #F6F6F6;
+    color: #0B0B0B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.year-change {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 6px 8px;
+    justify-content: center;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.year-change i{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.year-change:hover {
+    background-color: #669640;
+    color: #FFF;
+}
+
+.month-list {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #edf0f5;
+    padding: 20px;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px;
+    display: grid;
+    transform: scale(1.5);
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.month-list.show {
+    transform: scale(1);
+    visibility: visible;
+    pointer-events: visible;
+    transition: all 0.2s ease-in-out;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.month-list > div {
+    display: grid;
+    place-items: center;
+}
+
+.month-list > div > div {
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: #4D4D4D;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.month-list > div > div:hover {
+    background-color: #669640;
+    color: #FFF;
+}
+
+@keyframes to-top {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+.contanier .item{
+    display: inline-flex;
+    padding-bottom: 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 8px;
+    background: #FFF;
+    padding: 8px;
+}
+
+.contanier .item .desc{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contanier .item .desc a{
+    margin-top: 2px;
+    display: flex;
+    width: 229px;
+    height: 36px;
+    padding: 14px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #8abe5e;
+    text-decoration: none;
+    transition: 0.3s;
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.contanier .item .desc a:hover{
+    background: #669640;
+}
+
+
+.contanier .item .desc .xx p{
+    width: 229px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif   ;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contanier .item .desc .xxx{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.contanier .item div.progress{
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-color: #E0EAD8;
+}
+
+.contanier .item p{
+    color: #4D4D4D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.contanier .desc span{
+    color: #669640;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contanier .donate{
+    display: flex;
+    width: 231px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 75px;
+}
+.contanier .donate p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    color: #4D4D4D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.contanier .item div.progress span{
+    position: absolute;
+    width: 70%;
+    height: 4px;
+    background-color: #669640;
+    border-radius: 8px;
+}

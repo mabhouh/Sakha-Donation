@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: rgb(224, 94, 94);
+}
+
+.contanier{
+    padding: 16px 20px;
+    height: 100%;
+    width: 375px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.contanier .links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.contanier .links p{
+    color: #0B0B0B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.contanier .links div{
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contanier .links svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contanier .links svg rect{
+    transition: 0.3s;
+}
+
+.contanier .links svg:hover rect{
+    fill: #669640;
+}
+
+.contanier .links svg:hover ellipse,
+.contanier .links svg:hover path{
+    fill: white;
+}
+
+.contanier .children{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    height: 120vh;
+    margin-bottom: 32px;
+    flex-direction: column;
+}
+
+.coming.children,
+.impact.children{
+    margin-top: -27px;
+}
+
+.contanier .children .item{
+    display: inline-flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    background: #FFF;
+}
+
+.contanier .item .desc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 0 8px  8px  8px;
+}
+
+.contanier .item .desc .xx p{
+    width: 320px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif   ;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contanier .item .desc .xxx{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.contanier .children .item div.progress{
+    position: relative;
+    width: 320px;
+    height: 4px;
+    background-color: #E0EAD8;
+}
+
+.contanier .children .item p{
+    color: #4D4D4D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.contanier .children span{
+    color: #669640;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contanier .children .donate{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 75px;
+}
+
+.contanier .children .donate p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    color: #4D4D4D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.contanier .children .item div.progress span{
+    position: absolute;
+    width: 70%;
+    height: 4px;
+    background-color: #669640;
+    border-radius: 8px;
+}
+
+.bottom-nav {
+    width: 375px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px 8px 0px 0px;
+    background: #FFF;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.05);
+    padding: 16px 20px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-nav .icon{
+    cursor: pointer;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.bottom-nav .active{
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.bottom-nav .active svg path{
+    fill: #669640;
+}
+
+.bottom-nav .active span{
+    width: 21px;
+    height: 5px;
+    border-radius: 6px;
+    background: #669640;
+    top: 35px;
+    position: absolute;
+}
+
+.bottom-nav .icon.x path{
+    transition: 0.3s;
+}
+
+.bottom-nav .icon.x:hover path{
+    fill: #8abe5e;
+}

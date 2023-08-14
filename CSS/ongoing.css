@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: white;
+}
+
+.contanier{
+    padding: 16px 20px 0 20px;
+    height: 100vh;
+    width: 375px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 16px;
+}
+
+.contanier .subtitle{
+    display: flex;
+    width: 335px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contanier .subtitle .left{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.contanier .subtitle svg{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.contanier .subtitle svg rect{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contanier .subtitle svg:hover rect{
+    fill: #669640;
+}
+
+.contanier .subtitle svg:hover path{
+    fill: white;
+}
+
+.contanier .subtitle svg path{
+    transition: 0.3s;
+}
+
+.contanier .subtitle svg:hover path{
+    transform: translateX(-4px);
+}
+
+.contanier .subtitle h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.contanier .subtitle p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#4D4D4D;
+    font-size: 14px;
+    font-style: normal;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.contanier .subtitle p svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    position: relative;
+    transition: 0.3s;
+    left: 4px;
+}
+
+.contanier .subtitle p:hover svg{
+    transform: translateX(4.5px);
+}
+
+.contanier .subtitle p:hover path{
+    fill: #669640;
+}
+
+.contanier section{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.contanier section .don-char{
+    display: flex;
+    width: 335px;
+    padding: 4px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.03);
+}
+
+.contanier section .don-char a{
+    display: flex;
+    text-decoration: none;
+    width: 161px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #F6F6F6;
+    color: #0B0B0B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contanier section .don-char a.active{
+    color: #0062A0;
+    text-align: center;
+    background: #e7eff4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 16px;
+}
+
+.contanier .invoice{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contanier .invoice .edit{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contanier .invoice .edit svg{
+    cursor: pointer;
+}
+
+.contanier .inv{
+    display: flex;
+    width: 335px;
+    padding: 12px;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.03);
+}
+
+.contanier .inv .label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.contanier .inv .input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11.4px;
+}
+
+.contanier .inv .label p{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.contanier .inv .input p{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.create{
+    display: inline-flex;
+    height: 84px;
+    padding: 16px 20px 24px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px 8px 0px 0px;
+    background: #FFF;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+a.create-charity-now{
+    text-decoration: none;
+    width: 100%;
+}
+
+a.create-charity-now [type=submit]{
+    display: flex;
+    outline: none;
+    border: none;
+    width: 335px;
+    height: 48px;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 8px;
+    background: #8abe5e;
+    color: #FFF;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.4s;
+}
+
+a.create-charity-now [type=submit]:hover{
+    background: #669640;
+}
+
+.pass{
+    transform: translateX(-100px);
+}

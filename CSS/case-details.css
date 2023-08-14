@@ -1,0 +1,1828 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: white;
+}
+
+.contanier{
+    padding: 0 20px 0 20px;
+    height: 100%;
+    width: 375px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.ac{
+    padding: 0 20px 0 20px;
+    max-height: 117vh;
+    width: 375px;
+    opacity: 0.800000011920929;
+    background: #000;    
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.contanier .acti{
+    display: none;
+    opacity: 0;
+}
+
+.contanier .a{
+    display: none;
+    opacity: 0;
+}
+
+.contanier .active{
+    display: flex;
+    background: #F8F8F8;
+    padding: 25px 20px 170px 20px;
+    width: 375px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 40px;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.k{
+    display: none;
+}
+
+.contanier .active .subtitle{
+    display: flex;
+    width: 335px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contanier .active .subtitle h2{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.contanier .active .subtitle .close{
+    cursor: pointer;
+    position: relative;
+}
+
+.contanier .active .subtitle .close svg rect{
+    transition: 0.3s;
+}
+
+.contanier .active .subtitle .close svg:hover rect{
+    fill: #669640;
+}
+
+.contanier .active .subtitle .close svg path{
+    transition: 0.3s;
+}
+
+.contanier .active .subtitle .close svg:hover path{
+    fill: white;
+}
+
+.active .associations{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.active .associations .association{
+    display: flex;
+    width: 335px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active .associations .association .page{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.active .associations .association .page-name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.active .associations .association .page-name p{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.active .associations .association .page-name .Verify{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px
+}
+
+.active .associations .association .page-name .Verify p{
+    color: #669640;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.active .associations .association a{
+    display: flex;
+    width: 126px;
+    height: 40px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #DBDBDB;
+    color: #4D4D4D;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: 0.3s;
+}
+
+.active .associations .association a:hover{
+    background: #669640;
+    color: white;
+}
+
+.active .associations span.line0{
+    width: 335px;
+    height: 1px;
+    background: #EDEDED;
+}
+
+.ac0{
+    padding: 0 20px 0 20px;
+    width: 375px;
+    max-height: 117vh;
+    opacity: 0.800000011920929;
+    background: #000;    
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.contanier .acti0{
+    display: none;
+    opacity: 0;
+}
+
+.contanier .a0{
+    display: none;
+    opacity: 0;
+}
+
+.contanier .active0{
+    display: flex;
+    background: #F8F8F8;
+    padding: 25px 20px 170px 20px;
+    width: 375px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 40px;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.j{
+    display: none;
+}
+
+.contanier .active0 .subtitle{
+    display: flex;
+    width: 335px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contanier .active0 .subtitle h2{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.contanier .active0 .subtitle .closee{
+    cursor: pointer;
+    position: relative;
+}
+
+.contanier .active0 .subtitle .closee svg rect{
+    transition: 0.3s;
+}
+
+.contanier .active0 .subtitle .closee svg:hover rect{
+    fill: #669640;
+}
+
+.contanier .active0 .subtitle .closee svg path{
+    transition: 0.3s;
+}
+
+.contanier .active0 .subtitle .closee svg:hover path{
+    fill: white;
+}
+
+.active0 .associations{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.active0 .associations .association{
+    display: flex;
+    width: 335px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active0 .associations .association .page{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.active0 .associations .association .page img{
+    border-radius: 8px;
+}
+
+.active0 .associations .association .page-name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.active0 .associations .association .page-name p{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.active0 .associations .association .page-name .Verify{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px
+}
+
+.active0 .associations .association .page-name .Verify p{
+    color: #828282;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.active0 .associations .association a{
+    display: flex;
+    width: 126px;
+    height: 40px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #DBDBDB;
+    color: #4D4D4D;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: 0.3s;
+}
+
+.active0 .associations .association a:hover{
+    background: #669640;
+    color: white;
+}
+
+.active0 .associations span.line0{
+    width: 335px;
+    height: 1px;
+    background: #EDEDED;
+}
+
+.ac1{
+    padding: 0 20px 0 20px;
+    width: 375px;
+    max-height: 117vh;
+    opacity: 0.800000011920929;
+    background: #000;    
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.contanier .acti1{
+    display: none;
+    opacity: 0;
+}
+
+.contanier .a1{
+    display: none;
+    opacity: 0;
+}
+
+.contanier .active1{
+    display: flex;
+    background: #F8F8F8;
+    padding: 25px 20px 170px 20px;
+    width: 375px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 40px;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.i{
+    display: none;
+}
+
+.active1 .subtitle{
+    display: flex;
+    width: 335px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active1 .subtitle h2{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.active1 .subtitle .closeee{
+    cursor: pointer;
+    position: relative;
+}
+
+.active1 .subtitle .closeee svg rect{
+    transition: 0.3s;
+}
+
+.active1 .subtitle .closeee svg:hover rect{
+    fill: #669640;
+}
+
+.active1 .subtitle .closeee svg path{
+    transition: 0.3s;
+}
+
+.active1 .subtitle .closeee svg:hover path{
+    fill: white;
+}
+
+.active1 .prayers{
+    display: flex;
+    padding: 16px;
+    width: 335px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    background: #FFF;
+    margin-top: 8px;
+    position: relative;
+}
+
+.active1 .prayers .edit{
+    display: none;
+}
+
+.active1 .prayers .edits{
+    display: flex;
+    width: 112px;
+    height: 100px;
+    padding: 8px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    position: absolute;
+    top: 26px;
+    right: 53px;
+    transition: 0.5s;
+}
+
+.active1 .prayers .edits div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10px;
+    cursor: pointer;
+    width: 90px;
+    padding: 2px 7px;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+.active1 .prayers .edits div:hover{
+    background: #EDEDED;
+}
+
+.active1 .prayers .edits div:last-child:hover{
+    background: #F1E5E7;
+}
+
+.active1 .prayers .edits span{
+    width: 113px;
+    height: 1px;
+    background: #EDEDED;
+    padding:  0.5px 0;
+}
+.active1 .prayers .edits div p{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    margin-left: 8px;
+}
+
+.active1 div.t{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.active1 div.t .setting{
+    cursor: pointer;
+}
+
+.active1 div.t .setting svg path{
+    transition: 0.3s;
+}
+
+.active1 div.t .setting svg:hover path{
+    fill: #669640;
+}
+
+.active1 .s{
+    display: flex;
+    padding: 16px;
+    width: 335px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    background: #FFF;
+    margin-top: 0;
+}
+
+.active1 .prayers .prayer{
+    display: flex;
+    gap: 4px;
+}
+
+.active1 .prayers .prayer .title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.active1 .prayers .prayer .title p{
+    font-style: normal;
+    line-height: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.active1 .prayers .prayer .title p:first-child{
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.active1 .prayers .prayer .title p:last-child{
+    color:#949494;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.active1 .prayers span{
+    width: 303px;
+    height: 1px;
+    border-radius: 1px;
+    background-color: #EDEDED;
+}
+
+.active1 .prayers .pray{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.active1 .prayers .pray .comment p{
+    width: 303px;
+    color:#000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.active1 .prayers .pray .react{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.active1 .prayers .pray .react .rec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.active1 .prayers .pray .react .rec p{
+    color:#000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.active1 .prayers .pray .react .rec svg rect{
+    transition: 0.3s;
+}
+
+.active1 .prayers .pray .react .rec:hover rect{
+    fill: #669640;
+}
+
+.active1 .prayers .pray .react .rec svg path{
+    transition: 0.3s;
+}
+
+.active1 .prayers .pray .react .rec:hover path{
+    fill: white;
+}
+
+.active1 input.pray{
+    display: flex;
+    outline: none;
+    border: none;
+    width: 335px;
+    height: 48px;
+    padding: 14px 16px;
+    margin-bottom: 90px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #EFF4EB;
+    color: #8abe5e;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.active1 input.pray:hover{
+    color: #669640;
+}
+
+.active1 .fixed{
+    height: 84px;
+    padding: 16px 20px 16px 20px;
+    bottom: 0;
+    width: 375px;
+    border-radius: 8px 8px 0px 0px;
+    background: #FFF;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    transform: translateX(-20px);
+}
+
+.active1 a.pray-now{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.active1 a.pray-now input{
+    width: 279px;
+    height: 48px;
+    padding: 14px 16px;
+    border-radius: 8px;
+    background: #F8F8F8;
+    border: none;
+    outline: none;
+}
+
+.active1 a.pray-now input::placeholder{
+    color: #828282;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.active1 a.pray-now svg rect{
+    fill: #8abe5e;
+    transition: 0.3s;
+}
+
+.active1 a.pray-now svg:hover rect{
+    fill: #669640;
+}
+
+.ac0{
+    padding: 0 20px 0 20px;
+    width: 375px;
+    max-height: 117vh;
+    opacity: 0.800000011920929;
+    background: #000;    
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.contanier .acti0{
+    display: none;
+    opacity: 0;
+}
+
+.contanier .a0{
+    display: none;
+    opacity: 0;
+}
+
+.contanier .active0{
+    display: flex;
+    background: #F8F8F8;
+    padding: 25px 20px 170px 20px;
+    width: 375px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 40px;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.j{
+    display: none;
+}
+
+.contanier .active0 .subtitle{
+    display: flex;
+    width: 335px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contanier .active0 .subtitle h2{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.contanier .active0 .subtitle .closee{
+    cursor: pointer;
+    position: relative;
+}
+
+.contanier .active0 .subtitle .closee svg rect{
+    transition: 0.3s;
+}
+
+.contanier .active0 .subtitle .closee svg:hover rect{
+    fill: #669640;
+}
+
+.contanier .active0 .subtitle .closee svg path{
+    transition: 0.3s;
+}
+
+.contanier .active0 .subtitle .closee svg:hover path{
+    fill: white;
+}
+
+.active0 .associations{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.active0 .associations .association{
+    display: flex;
+    width: 335px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active0 .associations .association .page{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.active0 .associations .association .page img{
+    border-radius: 8px;
+}
+
+.active0 .associations .association .page-name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.active0 .associations .association .page-name p{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.active0 .associations .association .page-name .Verify{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px
+}
+
+.active0 .associations .association .page-name .Verify p{
+    color: #828282;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.active0 .associations .association a{
+    display: flex;
+    width: 126px;
+    height: 40px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #DBDBDB;
+    color: #4D4D4D;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: 0.3s;
+}
+
+.active0 .associations .association a:hover{
+    background: #669640;
+    color: white;
+}
+
+.active0 .associations span.line0{
+    width: 335px;
+    height: 1px;
+    background: #EDEDED;
+}
+
+.contanier .case{
+    position: relative;
+}
+
+.contanier .case .links{
+    position: absolute;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px 0 20px;
+    width: 100%;
+}
+
+.contanier .case .links a.y svg path{
+    transition: 0.3s;
+}
+
+.contanier .case .links a.y svg:hover path{
+    transform: translateX(-4px);
+}
+
+.contanier .case .links div{
+    display: flex;
+    gap: 8px;
+}
+
+.contanier .case .links svg rect{
+    transition: 0.3s;
+}
+
+.contanier .case .links svg:hover rect{
+    fill: #669640;
+}
+
+.contanier .case .links svg:hover path{
+    fill: white;
+}
+
+.carousel-navigation{
+    position: absolute;
+    bottom: 16px;
+    padding: 0 166px;
+}
+
+.carousel-navigation-list,
+.carousel-navigation-item{
+    display: flex;
+    gap: 6px;
+}
+  
+.carousel-navigation-button{
+    display: flex;
+    width: 6px;
+    height: 6px;
+    background-color: #DADEE3;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.carousel-navigation-button:hover{
+    background-color: #669640;
+}
+
+.carousel-navigation-button-active{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #669640;
+}
+
+.contanier .content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.contanier .desc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.contanier .content .desc .xx p{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.contanier .content .desc .xxx{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 335px;
+}
+
+.contanier .content .desc div.progress{
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-color: #E0EAD8;
+}
+
+.contanier .content .desc p{
+    color: #4D4D4D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.contanier .content span{
+    color: #669640;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contanier .content .donate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 75px;
+    width: 100%;
+}
+
+.contanier .content .donate p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    color: #4D4D4D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.contanier .content .desc div.progress span{
+    position: absolute;
+    width: 151px;
+    height: 4px;
+    background-color: #669640;
+    border-radius: 8px;
+}
+
+.ass-don{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.ass-don .item{
+    display: flex;
+    height: 152px;
+    padding: 16px 26px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #EFF4EB;
+}
+
+.ass-don .item p{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    height: 22px;
+    line-height: normal;
+    margin-bottom: 4px;
+}
+
+.ass-don .item .img-list{
+    display: flex;
+    width: 291px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.ass-don .item a{
+    display: flex;
+    width: 100%;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
+    border-radius: 4px;
+    background: #E0EAD8;
+    color: #8abe5e;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: normal;
+    transition: 0.3s;
+}
+
+.ass-don .item a:hover{
+    color: #669640;
+}
+
+.ass-don .item a svg{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+.ass-don .item a svg path{
+    fill: #8abe5e;
+    transition: 0.3s;
+}
+
+.ass-don .item a:hover svg path{
+    fill: #669640;
+}
+
+.content span.line{
+    width: 335px;
+    height: 1px;
+    background: #EDEDED;
+}
+
+.contanier .content .Fund{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.contanier .content p.title{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.content .Fund .Fundraise a .health{
+    text-decoration: none;
+}
+
+.content .Fund .Fundraise{
+    display: flex;
+    width: 335px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content .Fund .Fundraise .health{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.content .Fund .Fundraise .health img{
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.content .Fund .Fundraise .health .name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.content .Fund .Fundraise .health .name a{
+    text-decoration: none;
+    background-color:transparent;
+}
+
+.content .Fund .Fundraise .health .name p{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.content .Fund .Fundraise .health .name .Verified{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px
+}
+
+.content .Fund .Fundraise .health .name .Verified p{
+    color: #669640;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.content .Fund .Fundraise a:last-child{
+    display: flex;
+    width: 126px;
+    height: 40px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #DBDBDB;
+    color: #4D4D4D;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: 0.3s;
+}
+
+.content .Fund .Fundraise a:hover{
+    background: #669640;
+    color: white;
+}
+
+.content .Pat{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.content .Pat p.title{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.content .Pat .Patient{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.content .Pat .Patient svg:first-child{
+    cursor: pointer;
+}
+
+.content .Pat .Patient .name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.content .Pat .Patient .name p{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.content .Pat .name .Verified{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.content .Pat .name .Verified p{
+    color: #669640;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.content .story{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.content .story p.title{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.content .story p.subtitle{
+    color: #000;
+    width: 335px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.content .subtitle{
+    display: flex;
+    width: 335px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+}
+
+.content .subtitle h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.content .subtitle p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#4D4D4D;
+    font-size: 14px;
+    font-style: normal;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.content .subtitle p svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    position: relative;
+    transition: 0.3s;
+    left: 4px;
+}
+
+.content .subtitle p:hover svg{
+    transform: translateX(4.5px);
+}
+
+.content .subtitle p:hover path{
+    fill: #669640;
+}
+
+.content .subtitle p:hover{
+    color: #669640;
+}
+
+.content .prayers{
+    display: flex;
+    padding: 16px;
+    width: 335px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    background: #FFF;
+    margin-top: 8px;
+}
+.content .prayers .prayer{
+    display: flex;
+    gap: 4px;
+}
+
+.content .prayers .prayer .title{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .prayers .prayer .title p{
+    font-style: normal;
+    line-height: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content .prayers .prayer .title p:first-child{
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content .prayers .prayer .title p:last-child{
+    color:#949494;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.content .prayers span{
+    width: 303px;
+    height: 1px;
+    border-radius: 1px;
+    background-color: #EDEDED;
+}
+
+.content .prayers .pray{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.content .prayers .pray .comment p{
+    width: 303px;
+    color:#000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.content .prayers .pray .react{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.content .prayers .pray .react .rec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.content .prayers .pray .react .rec p{
+    color:#000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.content .prayers .pray .react .rec svg rect{
+    transition: 0.3s;
+}
+
+.content .prayers .pray .react .rec:hover rect{
+    fill: #669640;
+}
+
+.content .prayers .pray .react .rec svg path{
+    transition: 0.3s;
+}
+
+.content .prayers .pray .react .rec:hover path{
+    fill: white;
+}
+
+.content input.pray{
+    display: flex;
+    outline: none;
+    border: none;
+    width: 335px;
+    height: 48px;
+    padding: 14px 16px;
+    margin-bottom: 90px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #EFF4EB;
+    color: #8abe5e;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.content input.pray:hover{
+    color: #669640;
+}
+
+.contanier .donate-now{
+    background: #FFF;
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.05);
+    padding: 16px 20px;
+    position: fixed;
+    bottom: 0;
+}
+
+.contanier .donate-now [type=submit]{
+    display: flex;
+    outline: none;
+    border: none;
+    width: 335px;
+    height: 48px;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 8px;
+    background: #8abe5e;
+    color: #FFF;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.4s;
+}
+
+.contanier .donate-now [type=submit]:hover{
+    background: #669640;
+}
+
+.hide{
+    display: none !important;
+}
+
+.w{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.w .subtitle{
+    display: flex;
+    width: 335px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.w .subtitle h2{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.w .subtitle .closeeee{
+    cursor: pointer;
+    position: relative;
+}
+
+.w .subtitle .closeeee svg rect{
+    transition: 0.3s;
+}
+
+.w .subtitle .closeeee svg:hover rect{
+    fill: #669640;
+}
+
+.w .subtitle .closeeee svg path{
+    transition: 0.3s;
+}
+
+.w .subtitle .closeeee svg:hover path{
+    fill: white;
+}
+
+.w .your-pray{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.w .your-pray label{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.w .your-pray p{
+    display: flex;
+    width: 335px;
+    padding: 14px 16px;
+    align-items: flex-start;
+    border-radius: 8px;
+    background: #FFF;
+    border: none;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.w .save a{
+    text-decoration: none;
+}
+
+.w input{
+    display: flex;
+    outline: none;
+    border: none;
+    width: 335px;
+    height: 48px;
+    padding: 14px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #8abe5e;
+    color: #FFF;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.w div.save input:hover{
+    background: #669640;
+}
+
+.c2{
+    padding: 0 20px 0 20px;
+    width: 375px;
+    height: 100vh;
+    opacity: 0.800000011920929;
+    background: #000;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.i2{
+    display: flex;
+    background: #F8F8F8;
+    padding: 25px 20px 40px 20px;
+    width: 375px;
+    border-radius: 10px;
+    position: relative;
+    bottom: -450px;
+    gap: 8px;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+
+@media{
+    .i2{
+        bottom: -200px;
+    }   
+}
+
+.w-none{
+    display: none;
+}
+
+.d{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: 0.5s;
+}
+
+.d .subtitle{
+    display: flex;
+    width: 335px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.d .subtitle h2{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.d .subtitle .closeeeee{
+    cursor: pointer;
+    position: relative;
+}
+
+.d .subtitle .closeeeee svg rect{
+    transition: 0.3s;
+}
+
+.d .subtitle .closeeeee svg:hover rect{
+    fill: #669640;
+}
+
+.d .subtitle .closeeeee svg path{
+    transition: 0.3s;
+}
+
+.d .subtitle .closeeeee svg:hover path{
+    fill: white;
+}
+
+.c3{
+    padding: 0 20px 0 20px;
+    width: 375px;
+    height: 100vh;
+    opacity: 0.800000011920929;
+    background: #000;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.i3{
+    display: flex;
+    background: #F8F8F8;
+    padding: 25px 20px 40px 20px;
+    width: 375px;
+    border-radius: 10px;
+    position: relative;
+    bottom: -450px;
+    gap: 8px;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+
+@media{
+    .i3{
+        bottom: -200px;
+    }
+}
+
+.d .desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.d .desc svg rect{
+    fill: #93000F;
+}
+
+.d .desc p{
+    width: 335px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.d .desc p span{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.d .desc div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.d .desc div a{
+    text-decoration: none;
+}
+
+.d .desc div a:first-child input{
+    display: flex;
+    border: none;
+    width: 335px;
+    height: 48px;
+    padding: 14px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #93000fd2;
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.d .desc div a:first-child input:hover{
+    background: #93000F;
+
+}
+
+.d .desc div a:last-child input{
+    display: flex;
+    border: none;
+    width: 335px;
+    height: 48px;
+    padding: 14px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #e07279;
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.d .desc div a:last-child input:hover{
+    background: #93000fef;
+
+}
+
+.d-d-none{
+    display: none;
+}

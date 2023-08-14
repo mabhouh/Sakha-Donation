@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  background-color: white;
+}
+
+.contanier{
+  padding: 16px 20px 0 20px;
+  height: 100vh;
+  width: 375px;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.contanier .subtitle{
+  display: flex;
+  width: 335px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.contanier .subtitle .left{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contanier .subtitle svg{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.contanier .subtitle svg rect{
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.contanier .subtitle svg:hover rect{
+  fill: #669640;
+}
+
+.contanier .subtitle svg:hover path{
+  fill: white;
+}
+
+.contanier .subtitle svg path{
+  transition: 0.3s;
+}
+
+.contanier .subtitle svg:hover path{
+  transform: translateX(-4px);
+}
+
+.contanier .accordion-container{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+  
+.contanier .accordion-container .accordion{
+  cursor: pointer;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  background: var(--main-color-100, #669640);
+}
+
+.contanier .accordion-container .accordion.active .accordion-heading{
+  background: #669640;
+  padding: 16px 16px 0 16px;
+}
+
+.contanier .accordion-container .accordion.active .accordion-heading h3{
+  color: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;}
+
+.contanier .accordion-container .accordion.active .accordion-heading i{
+  color:#fff;
+  transform: rotate(180deg);
+  transition: transform .2s .1s;
+}
+
+.contanier .accordion-container .accordion.active .accordion-content{
+  display: block;
+  padding: 0 16px 16px 16px;
+}
+
+.contanier .accordion-container .accordion .accordion-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFF;
+  padding: 16px;
+  cursor: pointer;
+  width: 335px;
+  border-radius: 8px;
+  border: none;
+}
+
+.accordion-container .accordion .accordion-heading h3{
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.accordion-container .accordion .accordion-heading i{
+  font-size: 25px;;
+}
+
+.accordion-container .accordion .accordion-content{
+  padding: 16px;
+  background: #fff;
+  display: none;
+  animation: animate 0.2s linear backwards;
+  transform-origin: top;
+  width: 335px;
+  color: #FFF;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  border-radius: 8px;
+  line-height: normal;
+  background: #669640;
+}
+
+@keyframes animate {
+  0%{
+    transform: scaleY(0);
+  }
+}

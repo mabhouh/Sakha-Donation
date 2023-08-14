@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: white;
+}
+
+.contanier{
+    padding: 30px 20px 20px 20px;
+    height: 100vh;
+    width: 375px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.arrow{
+    display: inline-flex;
+    align-items: flex-start;
+    position: relative;
+    top: -8px;
+    left: -53px;
+    gap: 10px;
+}
+
+.arrow .img {
+    padding: 8px;
+    background: #FFF;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 8px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+
+.arrow img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.arrow img:hover{
+    transform: translateX(-4.5px);
+}
+
+.header{
+    top: -4px;
+    position: relative;
+}
+
+.header h1{
+    color: #0B0B0B;
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+    left: -21px;
+}
+
+.header p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    position: relative;
+    left: 5.5px;
+    top: -7px;
+    font-weight: 400;
+    color: #000;
+}
+
+.otp form{
+    margin-top: 200px;
+    width: 335px;
+}
+
+.otp form .otp-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 335px;
+    gap: 15px;
+}
+
+.otp form .otp-input input{
+    width: 72px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    color: #669640;
+    text-align: center;
+    outline: none;
+    font-weight: bold;
+}
+
+.otp form .submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.otp form .submit a{
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+    padding: 15px 20px;
+    background-color: #8abe5e;
+    color: #fff;
+    font-weight: 900;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+    text-align: center;
+    width: 335px;
+}
+
+.otp form .submit a:hover{
+    background-color: #669640;
+}
+
+.otp .remember-account{
+    position: relative;
+    bottom: -150px;
+    width: 335px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+}
+
+.otp .remember-account p{
+    font-size: 14px;
+    padding: 14px 0.64px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.otp .remember-account a{
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    padding:  14px 10px;
+    background-color: #EFF4EB;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #8abe5e;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.otp .remember-account a:hover{
+    color: #669640;
+}

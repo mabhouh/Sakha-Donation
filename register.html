@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="CSS/register.css">
+</head>
+<body>
+    <section class="contanier">
+        <div class="login-info">
+            <img src="imgs/Vector-login.png" alt="">
+            <h1>Register</h1>
+            <p>Enter your email address and password to create new account!</p>
+        </div>
+
+        
+        <form method="post">
+            <div>
+                <label>Your Email</label>
+                <input type="email" name="email" placeholder="Type your email" required>
+            </div>
+
+            <div class="password-input">
+                <label>Your Password</label>
+                <input type="password" id="myInput" name="password" placeholder="************" required>
+                <img src="/imgs/pass-hidden.png" alt="">
+                <img src="/imgs/pass-show.png" alt="">
+            </div>
+
+            <label class="checkbox">
+                <input type="checkbox" value="remember-me" id="remember_me"> Remember Me
+            </label>
+                <input type="submit" value="REGISTER">
+            <p>By clicking the Register button you agree on our <span>Terms of Use and Privacy Policy</span>!</p>
+        </form>
+
+        <div class="substitute">
+            <p>Or Continue With</p>
+            <div class="social">
+                <img src="/imgs/logos_facebook.png" alt="">
+                <img src="/imgs/logos_google.png" alt="">
+                <img src="/imgs/ic_baseline-apple.png" alt="">
+            </div>
+        </div>
+        <div class="create-account">
+            <p>Already have an account?</p>
+            <a href="login.html">Login Now!</a>
+        </div>
+    </section>
+
+    <script>
+        function passwordToggle() {
+            let x = document.getElementById('myInput')
+            if (x.type === "password") {
+                x.type = "text"
+                document.querySelector('.text').classList.add('open')
+                document.querySelector('.password').classList.remove('open')
+            } else {
+                x.type = "password"
+                document.querySelector('.text').classList.remove('open')
+                document.querySelector('.password').classList.add('open')
+            }
+        }
+        let showBtn = document.querySelectorAll('.password-input img')
+        showBtn.forEach((ele)=>{
+            ele.addEventListener('click', passwordToggle)
+        })
+    </script>
+</body>
+</html>

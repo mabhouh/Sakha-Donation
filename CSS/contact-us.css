@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: white;
+}
+
+.contanier{
+    padding: 16px 20px 0 20px;
+    height: 100%;
+    width: 375px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.contanier .subtitle{
+    display: flex;
+    width: 335px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contanier .subtitle .left{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contanier .subtitle svg{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.contanier .subtitle svg rect{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contanier .subtitle svg:hover rect{
+    fill: #669640;
+}
+
+.contanier .subtitle svg:hover path{
+    fill: white;
+}
+
+.contanier .subtitle svg path{
+    transition: 0.3s;
+}
+
+.contanier .subtitle svg:hover path{
+    transform: translateX(-4px);
+}
+
+form{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+form label{
+    color: #000;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+form label span{
+    color: #93000F;
+    font-weight: 900;
+}
+
+ form div input{
+    display: flex;
+    width: 335px;
+    height: 48px;
+    outline: none;
+    border-radius: 8px;
+    align-items: center;
+    border: none;
+    background: #fff;    
+    flex-shrink: 0;
+    padding: 14px 16px;
+    color: #000;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+form div input::placeholder{
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+form div textarea#y-message{
+    display: flex;
+    width: 335px;
+    height: 258px;
+    padding: 14px 16px;
+    align-items: flex-start;
+    border-radius: 8px;
+    border: none;
+    background: #FFF;
+    resize: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form div #y-message::placeholder{
+    color: #000;
+}
+
+.pay{
+    display: inline-flex;
+    height: 84px;
+    padding: 16px 20px 24px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px 8px 0px 0px;
+    background: #FFF;
+    position: fixed;
+    bottom: 0;
+    margin-top: 150px;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+a.pay-now{
+    text-decoration: none;
+    width: 100%;
+}
+
+a.pay-now [type=submit]{
+    display: flex;
+    outline: none;
+    border: none;
+    width: 335px;
+    height: 48px;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 8px;
+    background: #8abe5e;
+    color: #FFF;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.4s;
+}
+
+a.pay-now [type=submit]:hover{
+    background: #669640;
+}

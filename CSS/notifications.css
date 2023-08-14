@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: white;
+}
+
+.contanier{
+    padding: 16px 20px;
+    height: 100%;
+    width: 375px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.contanier .links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.contanier .links p{
+    color: #0B0B0B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.contanier .links div{
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contanier .links svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contanier .links svg rect{
+    transition: 0.3s;
+}
+
+.contanier .links svg:hover rect{
+    fill: #669640;
+}
+
+.contanier .links svg:hover path{
+    fill: white;
+}
+
+.contanier .notifications{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    height: 100vh;
+}
+
+.contanier .notification{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.contanier .newest{
+    color: #0B0B0B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.contanier .notifications .latest,
+.contanier .notifications .older{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.contanier .notifications .latest .notification,
+.contanier .notifications .older .notification{
+    display: flex;
+    gap: 8px;
+    width: 335px;
+    padding: 8px;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 8px;
+    background: #FFF;
+    transition: 0.3s;
+}
+.contanier .notifications .latest .notification:hover,
+.contanier .notifications .older .notification:hover{
+    background: #f7f7f7;
+}
+.contanier .notifications .latest .deatils,
+.contanier .notifications .older .deatils{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.contanier .notifications .latest .deatils p,
+.contanier .notifications .older .deatils p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+.contanier .notifications .latest .deatils p:first-child,
+.contanier .notifications .older .deatils p:first-child{
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contanier .notifications .latest .deatils p:last-child,
+.contanier .notifications .older .deatils p:last-child{
+    color: #8d8d8d;
+    width: 208px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.contanier .notifications .time{
+    color: #4D4D4D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: -2px;
+}
+
+.bottom-nav {
+    width: 375px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px 8px 0px 0px;
+    background: #FFF;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.05);
+    padding: 16px 20px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-nav .icon{
+    cursor: pointer;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.bottom-nav .active{
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.bottom-nav .active svg path:first-child{
+    fill: #669640;
+}
+
+.bottom-nav .active span{
+    width: 21px;
+    height: 5px;
+    border-radius: 6px;
+    background: #669640;
+    top: 33px;
+    position: absolute;
+}
+
+.bottom-nav .icon.x path{
+    transition: 0.3s;
+}
+
+.bottom-nav .icon.x:hover path{
+    fill: #8abe5e;
+}

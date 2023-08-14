@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: white;
+}
+
+.contanier{
+    padding: 30px 20px 20px 20px;
+    height: 120vh;
+    width: 375px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 8px;
+}
+
+.login-info img{
+    width: 60px;
+    height: 80px;
+}
+
+.login-info h1{
+    color: #000;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    height: 38px;
+}
+
+.login-info p{
+    display: flex;
+    width: 335px;
+    flex-direction: column;
+    color: var(--neutral-30, #76777A);
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+form{
+    padding: 0 20px;
+    margin-top: 40px;
+}
+
+form div{
+    display: flex;
+    height: 73px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+form label{
+    color: var(--balck-white-black, #000);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    width: 100px;
+    height: 22px;
+    line-height: normal;
+}
+
+form div input{
+    display: flex;
+    width: 335px;
+    height: 48px;
+    outline: none;
+    border-radius: 8px;
+    align-items: center;
+    border: none;
+    background: var(--balck-white-white, #FFF);    
+    gap: 10px;
+    flex-shrink: 0;
+    padding: 14px 16px;
+    font-size: 14px;
+    color: #8abe5e;
+    font-weight: bold;
+}
+
+form div input::placeholder{
+    color:#828282;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+form .password-input{
+    position: relative;
+    padding-top: 16px;
+}
+
+form .password-input svg{
+    display: none;
+}
+
+form .password-input .open{
+    display: inline;
+    position: absolute;
+    right: 6px;
+    top: 47px;
+    cursor: pointer;
+}
+
+form .password-input .text{
+    top: 53px;
+    right: 10px;
+    cursor: pointer;
+}
+form p{
+    float: right;
+    padding-top: 30px;
+    cursor: pointer;
+    transition: 0.27s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form p:hover{
+    color:#1970e2;
+}
+
+ form input[type=submit]{
+    display: flex;
+    outline: none;
+    border: none;
+    width: 335px;
+    height: 48px;
+    padding: 14px 16px;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    gap: 10px;
+    margin-top: 80px;
+    border-radius: 8px;
+    background: var(--main-color-100, #8abe5e);
+    color: var(--balck-white-white, #FFF);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.4s;
+}
+
+form input[type=submit]:hover{
+    background: #669640;
+}
+
+.substitute p{
+    text-align: center;
+    margin: 40px 0 16px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ .substitute .social{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+ .substitute .social img{
+    cursor: pointer;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    background-color: #FFFFFF;
+}
+
+ .create-account{
+    display: flex;
+    width: 335px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.create-account p{
+    color: var(--balck-white-black, #000);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+ .create-account a{
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 14px 16px;
+    background: var(--main-color-10, #EFF4EB);
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--main-color-100, #8abe5e);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.create-account a:hover{
+    color: var(--main-color-100, #669640);
+}

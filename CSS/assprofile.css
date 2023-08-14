@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: #FFF;
+}
+
+.contanier{
+    padding: 16px 20px 0 20px;
+    height: 100%;
+    width: 375px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 16px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    gap: 55px;
+    padding-top: 16px;
+}
+
+.header .arrow svg{
+    cursor: pointer;
+}
+
+.header .arrow svg rect{
+    transition: 0.3s;
+}
+
+.header .arrow svg:hover rect{
+    fill: #669640;
+}
+
+.header .arrow svg path{
+    transition: 0.3s;
+}
+.header .arrow svg:hover path{
+    fill: #FFF;
+    transform: translateX(-4.5px);
+}
+
+
+.header .right svg{
+    cursor: pointer;
+}
+
+.header .right svg rect{
+    transition: 0.3s;
+}
+
+.header .right svg:hover rect{
+    fill: #669640;
+}
+
+.header .right svg path{
+    transition: 0.3s;
+}
+.header .right svg:hover path{
+    fill: #FFF;
+}
+
+.header .middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+
+.header .middle .title{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12.5px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.header .middle .verifyed{
+    display: flex;
+    gap: 8px;
+}
+
+.header .middle .verifyed p{
+    color: #669640;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contanier .fundraising{
+    width: 335px;
+    height: 69px;
+    border-radius: 8px;
+    background: #EFF4EB;
+    display: flex;
+    align-items: center;
+}
+
+.contanier .fundraising .fundrais{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.contanier .fundrais .number{
+    padding: 9px 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.contanier .fundrais .number h3{
+    color: #000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.contanier .fundrais .number p{
+    color: #000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contanier .fundraising span{
+    height: 45px;
+    width: 2px;
+    background: #669640;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contanier a.follow{
+    text-decoration: none;
+}
+
+.contanier a.follow [type=submit]{
+    display: flex;
+    outline: none;
+    border: none;
+    width: 335px;
+    height: 48px;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 8px;
+    background: #8abe5e;
+    color: #FFF;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.3s;
+}
+
+.contanier a.follow [type=submit]:hover{
+    background: #669640;
+}
+
+.contanier .select{
+    display: flex;
+    align-items: center;
+}
+
+.contanier .select button:first-child{
+    display: flex;
+    width: 106px;
+    height: 48px;
+    padding: 14px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #EFF4EB;
+    color: #8abe5e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    transition: 0.3s;
+}
+
+.contanier .select button{
+    border: none;
+    display: flex;
+    width: 106px;
+    height: 48px;
+    padding: 14px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: #5E5E5E;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contanier .select button:hover{
+    color: #669640;
+    background: rgb(227, 233, 221);
+}
+
+.contanier .select button:first-child:hover{
+    background: rgb(227, 233, 221);
+} 
+
+.contanier .subtitle{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 16px;
+}
+
+.contanier .subtitle p{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.contanier .subtitle p.c span{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}

@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: white;
+}
+
+.contanier{
+    padding: 16px 20px 0 20px;
+    height: 100vh;
+    width: 375px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 8px;
+}
+
+.contanier .thanks{
+    width: 295px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.03);
+    padding: 25px;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.contanier .thanks svg{
+    position: relative;
+    bottom: 50px;
+}
+
+.contanier .thanks .desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    bottom: 50px;
+}
+
+.contanier .thanks .desc .head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.contanier .thanks .desc h2{
+    color: #669640;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+ 
+.contanier .thanks .desc .head  p{
+    color: #000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.contanier .thanks span{
+    width: 247px;
+    height: 1px;
+    background: #C9C9C9;
+    rotate: 0.5;
+    position: relative;
+    bottom: 50px;
+}
+
+.contanier .thanks .desc p{
+    width: 247px;    
+    color: #000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.4;
+}
+
+.contanier a.back{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    width: 295px;
+}
+
+.contanier a.back input{
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 14px 16px;
+    background: #8abe5e;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    width: 100%;
+}
+
+.contanier a.back input:hover{
+    background: #669640;
+}
+
+.contanier .thanks .date-time{
+    display: flex;
+    width: 247px;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    bottom: 50px;
+}
+
+.contanier .thanks .date-time p{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: normal;
+    font-style: normal;
+}
+
+.contanier .thanks .date-time p:first-child{
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.contanier .thanks .date-time p:last-child{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.contanier .thanks .date-time .date,
+.contanier .thanks .date-time .time{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.contanier .thanks .from,
+.contanier .thanks .to,
+.contanier .thanks .amount{
+    display: flex;
+    width: 247px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    position: relative;
+    bottom: 50px;
+}
+
+.contanier .thanks .from p:first-child,
+.contanier .thanks .to p:first-child,
+.contanier .thanks .amount p:last-child{
+    color: #000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.contanier .thanks .from p:last-child,
+.contanier .thanks .to p:last-child,
+.contanier .thanks .amount p:first-child{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

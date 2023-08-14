@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakha | Select Project</title>
+    <link rel="stylesheet" href="CSS/select-project.css">
+</head>
+<body>
+    <div class="contanier">
+        <div class="subtitle">
+            <div class="left">
+                <a href="zakat.html">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="8" fill="white"/>
+                    <path opacity="0.4" d="M23.7975 18.8096L27.4967 18.4824C28.3269 18.4824 29 19.1621 29 20.0003C29 20.8386 28.3269 21.5182 27.4967 21.5182L23.7975 21.1911C23.1463 21.1911 22.6183 20.6579 22.6183 20.0003C22.6183 19.3416 23.1463 18.8096 23.7975 18.8096Z" fill="#4D4D4D"/>
+                    <path d="M11.3753 18.8698C11.4332 18.8115 11.6492 18.5647 11.8521 18.3598C13.0357 17.0766 16.1262 14.9782 17.7429 14.336C17.9884 14.2335 18.6091 14.0154 18.9418 14C19.2592 14 19.5625 14.0738 19.8516 14.2192C20.2127 14.423 20.5007 14.7446 20.66 15.1236C20.7614 15.3857 20.9207 16.1733 20.9207 16.1876C21.0789 17.0479 21.165 18.4469 21.165 19.9934C21.165 21.465 21.0789 22.8067 20.949 23.6813C20.9349 23.6967 20.7756 24.6738 20.6021 25.0086C20.2847 25.6211 19.664 26 18.9996 26H18.9418C18.5087 25.9857 17.5989 25.6057 17.5989 25.5924C16.0684 24.9502 13.051 22.9532 11.8379 21.6258C11.8379 21.6258 11.4953 21.2844 11.347 21.0718C11.1157 20.7656 11.0001 20.3866 11.0001 20.0077C11.0001 19.5847 11.1299 19.1915 11.3753 18.8698Z" fill="#4D4D4D"/>
+                    </svg>
+                </a>             
+                <h2>Select a Project</h2>
+            </div>
+        </div>
+
+        <div class="selection">
+            <div class="item">
+                <div class="img-item">
+                    <img src="imgs/item1.png" alt="">
+                    <svg class="select" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="26" height="26" rx="8" fill="#4D4D4D"/>
+                        <path d="M18.0313 8L11.552 15.0839C11.1553 15.5175 10.472 15.5173 10.0757 15.0833L8.49847 13.3564C8.2169 13.0482 7.73205 13.0462 7.44796 13.3521C7.19489 13.6247 7.19341 14.0458 7.44456 14.3202L10.076 17.1944C10.4724 17.6273 11.1547 17.6273 11.5511 17.1944L19 9.05812" fill="#FBFBFB"/>
+                    </svg>
+                        
+                </div>
+                <div class="desc">
+                    <div class="xx">
+                        <p>Help Orphanage Children to thrive,<br> ..</p>
+                    </div>
+                    <div class="xxx">
+                        <p class="raised"><span>$2,379</span> fund raised from <span>$4,200</span></p>
+                        <div class="progress">
+                            <span></span>
+                        </div>
+                        <div class="donate">
+                            <p><span>1,500</span> Donators</p>
+                            <p><span>19</span> days left</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item2">
+                <div class="img-item">
+                    <img src="imgs/item1.png" alt="">
+                    <svg class="select2" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="26" height="26" rx="8" fill="#4D4D4D"/>
+                        <path d="M18.0313 8L11.552 15.0839C11.1553 15.5175 10.472 15.5173 10.0757 15.0833L8.49847 13.3564C8.2169 13.0482 7.73205 13.0462 7.44796 13.3521C7.19489 13.6247 7.19341 14.0458 7.44456 14.3202L10.076 17.1944C10.4724 17.6273 11.1547 17.6273 11.5511 17.1944L19 9.05812" fill="#FBFBFB"/>
+                    </svg>
+                </div>
+                <div class="desc">
+                    <div class="xx">
+                        <p>Help Orphanage Children to thrive,<br> ..</p>
+                    </div>
+                    <div class="xxx">
+                        <p class="raised"><span>$2,379</span> fund raised from <span>$4,200</span></p>
+                        <div class="progress">
+                            <span></span>
+                        </div>
+                        <div class="donate">
+                            <p><span>1,500</span> Donators</p>
+                            <p><span>19</span> days left</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="pay">
+        <a href="payment.html" class="pay-now">
+            <input type="submit" value="PAY NOW | $110">
+        </a>
+    </div>
+</body>
+
+
+
+
+<script>
+    let select = document.querySelector(".select");
+    let item = document.querySelector(".item");
+
+
+    item.onclick = function (){
+        select.classList.toggle("active");
+    }
+
+    let select_2 = document.querySelector(".select2");
+    let item_2 = document.querySelector(".item2");
+
+
+    item_2.onclick = function (){
+        select_2.classList.toggle("active");
+    }
+
+
+</script>
+</html>
