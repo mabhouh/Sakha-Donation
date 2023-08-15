@@ -121,6 +121,7 @@ body {
     width: 320px;
     height: 4px;
     background-color: #E0EAD8;
+    border-radius: 8px;
 }
 
 .contanier .children .item p{

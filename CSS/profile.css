@@ -99,6 +99,11 @@ a {
     flex-shrink: 0;
 }
 
+a.edit{
+    padding: 0 !important;
+    width: 40px !important;
+}
+
 .contanier .layout .profile .details{
     display: flex;
     align-items: center;

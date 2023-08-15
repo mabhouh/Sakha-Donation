@@ -248,7 +248,7 @@ body {
     line-height: normal;
 }
 
-.profile-data  .c-info .content p.change{
+.profile-data  .c-info .content a.change{
     color: var(--balck-white-black, #000);
     text-align: right;
     font-family: Arial, Helvetica, sans-serif;
@@ -258,9 +258,10 @@ body {
     line-height: normal;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 
-.profile-data  .c-info .content p.change:hover{
+.profile-data  .c-info .content a.change:hover{
     color: rgb(0, 98, 160);
 }
 
