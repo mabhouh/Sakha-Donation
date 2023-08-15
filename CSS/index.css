@@ -18,8 +18,8 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: var(--main-color-100, #669640);
-    background-image: url(/imgs/Vector.png);
+    background: #669640;
+    background-image: url(./imgs/Vector.png);
 }
 
 .loading-div{
