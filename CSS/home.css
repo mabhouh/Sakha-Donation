@@ -35,6 +35,7 @@ body {
 
 .contanier .header .left svg{
     cursor: pointer;
+    text-decoration: none;
 }
 
 .contanier .header .left svg rect{

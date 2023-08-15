@@ -456,6 +456,7 @@ body {
     width: 100%;
     height: 4px;
     background-color: #E0EAD8;
+    border-radius: 8px;
 }
 
 .contanier .item p{
@@ -483,6 +484,7 @@ body {
     align-items: center;
     gap: 75px;
 }
+
 .contanier .donate p{
     display: flex;
     align-items: center;
