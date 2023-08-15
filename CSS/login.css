@@ -11,6 +11,10 @@ body {
     background-color: white;
 }
 
+a{
+    text-decoration: none;
+}
+
 .contanier{
     padding: 30px 20px 20px 20px;
     height: 100%;
@@ -59,7 +63,6 @@ form{
 
 form div{
     display: flex;
-    height: 73px;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
@@ -124,10 +127,10 @@ form .password-input .text{
     cursor: pointer;
 }
 
-form a{
+form a.forgot{
     color: #000;
     float: right;
-    margin-top: 30px;
+    margin-top: 8px;
     cursor: pointer;
     font-size: 14px;
     transition: 0.3s;
@@ -135,14 +138,19 @@ form a{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-form a:hover{
+form a.forgot:hover{
     color:#1970e2;
 }
 
- form input[type=submit]{
+div.login{
+    margin-top: 50px;
+}
+
+form a[type=submit]{
     display: flex;
     outline: none;
     border: none;
+    text-decoration: none;
     width: 335px;
     height: 48px;
     padding: 14px 16px;
@@ -150,7 +158,6 @@ form a:hover{
     cursor: pointer;
     align-items: center;
     gap: 10px;
-    margin-top: 80px;
     border-radius: 8px;
     background: var(--main-color-100, #8abe5e);
     color: var(--balck-white-white, #FFF);
@@ -162,34 +169,33 @@ form a:hover{
     transition: 0.4s;
 }
 
-form input[type=submit]:hover{
+form a[type=submit]:hover{
     background: #669640;
 }
 
 .substitute p{
     text-align: center;
-    margin: 40px 0 16px 0;
+    margin: 49px 0 16px 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
- .substitute .social{
+.substitute .social{
     display: flex;
     justify-content: center;
     gap: 16px;
-    margin-top: 30px;
 }
 
- .substitute .social svg{
+.substitute .social svg{
     cursor: pointer;
 }
 
- .create-account{
+.create-account{
     display: flex;
     width: 335px;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 49px;
 }
 
 .create-account p{
@@ -200,7 +206,7 @@ form input[type=submit]:hover{
     line-height: normal;
 }
 
- .create-account a{
+.create-account a{
     border: none;
     outline: none;
     border-radius: 8px;

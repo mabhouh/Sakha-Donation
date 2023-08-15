@@ -270,11 +270,19 @@ a.edit{
     fill: #FFF;
 }
 
+.contanier .frame:hover svg.logout:last-child rect{
+    fill: #93000F;
+}
+
+.contanier .frame:hover svg.logout:last-child path{
+    transform: translateX(3.5px);
+    fill: #FFF;
+}
+
 .contanier .layout .frames:last-child .frame p{
     color: #93000F;
 
 }
-
 
 .bottom-nav {
     width: 375px;
