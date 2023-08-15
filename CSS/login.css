@@ -13,7 +13,7 @@ body {
 
 .contanier{
     padding: 30px 20px 20px 20px;
-    height: 120vh;
+    height: 100%;
     width: 375px;
     background-color: #f8f8f8;
     display: flex;
@@ -27,11 +27,6 @@ body {
     align-items: center;
     margin-top: 30px;
     gap: 8px;
-}
-
-.login-info img{
-    width: 60px;
-    height: 80px;
 }
 
 .login-info h1{
@@ -128,15 +123,19 @@ form .password-input .text{
     right: 10px;
     cursor: pointer;
 }
-form p{
+
+form a{
+    color: #000;
     float: right;
     padding-top: 30px;
     cursor: pointer;
-    transition: 0.27s;
+    font-size: 14px;
+    transition: 0.3s;
+    text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-form p:hover{
+form a:hover{
     color:#1970e2;
 }
 
@@ -180,13 +179,8 @@ form input[type=submit]:hover{
     margin-top: 30px;
 }
 
- .substitute .social img{
+ .substitute .social svg{
     cursor: pointer;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    flex-shrink: 0;
-    background-color: #FFFFFF;
 }
 
  .create-account{

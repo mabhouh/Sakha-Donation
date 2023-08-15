@@ -22,12 +22,6 @@ body {
     background-image: url(/imgs/Vector.png);
 }
 
-.logo-preloading img{
-    width: 134px;
-    height: 180px;
-    color: #FFF;
-}
-
 .loading-div{
     border-radius: 5px;
     position: relative;
