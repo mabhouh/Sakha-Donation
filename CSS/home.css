@@ -361,35 +361,7 @@ svg.title-logo{
     gap: 8px;
 }
 
-.contanier .urgent ul li{
-    display: flex;
-    padding: 8px 16px;
-    justify-content: center;
-    overflow: hidden;
-    align-items: center;
-    gap: 4px;
-    border-radius: 20px;
-    color: #4D4D4D;
-    background: #FFF;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    transition: 0.3s;
-    cursor: pointer;
-}
 
-.contanier .urgent ul li:hover{
-    color:#FFF;
-    background-color: #669640;
-}
-
-.contanier .urgent ul li.active{
-    color: #FFF;
-    background: #8abe5e;
-    transition: 0.3s;
-}
 
 .contanier .urgent ul li.active:hover{
     background: #669640;
@@ -416,13 +388,7 @@ svg.title-logo{
     gap: 8px;
     position: relative;
     left: 83px;
-    top: 30px;
-    margin-bottom: 32px;
-}
-
-.coming.children,
-.impact.children{
-    margin-top: -27px;
+    margin-bottom: 16px;
 }
 
 .contanier .children .item{
@@ -778,6 +744,7 @@ svg.title-logo{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
 }
 
 .bottom-nav .icon{
@@ -815,4 +782,80 @@ svg.title-logo{
 
 .bottom-nav .icon.x:hover path{
     fill: #8abe5e;
+}
+
+
+
+swiper-container{
+    width: 375px;
+    height: 36px;
+    display: flex;
+    gap: 8px;
+    padding-left: 20px;
+    justify-content: space-between;
+}
+
+swiper-slide{
+    display: flex;
+    width: 140px !important;
+    height: 36px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row !important;
+    gap: 4px;
+    border-radius: 20px;
+    background: #FFF;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+swiper-slide:hover{
+    background: #669640;
+}
+
+swiper-slide:hover path{
+    fill: #FFF;
+}
+
+swiper-slide svg rect{
+    fill: #4D4D4D;
+}
+
+swiper-slide p{
+    color: #4D4D4D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+swiper-slide.active{
+    display: flex;
+    width: 78px !important;
+    height: 36px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 20px;
+    background: #669640;
+}
+
+swiper-slide.active svg rect{
+    fill: #FFF;
+}
+
+swiper-slide.active p{
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+swiper-slide:hover p{
+    color: #FFF;
 }
