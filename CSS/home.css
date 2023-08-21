@@ -293,6 +293,7 @@ svg.title-logo{
     justify-content: space-between;
     align-items: center;
     gap: 4px;
+    margin-top: 8px;
 }
 
 .contanier .subtitle a{
@@ -345,7 +346,7 @@ svg.title-logo{
 .contanier .urgent{
     display: flex;
     gap: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .contanier .urgent nav{
@@ -507,7 +508,7 @@ svg.title-logo{
     background-size:cover ;
 }
 
-.contanier .impact .item1 .z{
+.contanier .impact .z{
     display: flex;
     gap: 8px;
     justify-content: space-between;
@@ -517,17 +518,7 @@ svg.title-logo{
     position: absolute;
 }
 
-.contanier .impact .item2 .zz{
-    display: flex;
-    gap: 8px;
-    justify-content: space-between;
-    align-items: center;
-    left: 215px;
-    bottom: 15px;
-    position: absolute;
-}
-
-.contanier .impact .item1 .z p{
+.contanier .impact .z p{
     width: 133px;
     color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
@@ -537,7 +528,7 @@ svg.title-logo{
     line-height: normal;
 }
 
-.contanier .impact .item2 .zz p{
+.contanier .impact .z p{
     width: 133px;
     color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
@@ -547,7 +538,7 @@ svg.title-logo{
     line-height: normal;
 }
 
-.contanier .impact .item1 .z svg{
+.contanier .impact .z svg{
     display: flex;
     width: 34px;
     height: 34px;
@@ -561,11 +552,11 @@ svg.title-logo{
     transition: 0.3s;
 }
 
-.contanier .impact .item1 .z svg:hover{
+.contanier .impact .z svg:hover{
     background: #669640;
 }
 
-.contanier .impact .item2 .zz svg{
+.contanier .impact .z svg{
     display: flex;
     width: 34px;
     height: 34px;
@@ -579,11 +570,11 @@ svg.title-logo{
     transition: 0.3s;
 }
 
-.contanier .impact .item1 .zz svg:hover{
+.contanier .impact .z svg:hover{
     background: #669640;
 }
 
-.contanier .impact .item1 svg path{
+.contanier .impact svg path{
     display: flex;
     width: 24px;
     height: 24px;
@@ -594,14 +585,10 @@ svg.title-logo{
 
 .contanier .prayers{
     display: flex;
-    padding: 16px;
     width: 335px;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    border-radius: 8px;
-    background: #FFF;
-    margin-top: 8px;
 }
 
 .contanier .prayers .prayer{
@@ -687,7 +674,7 @@ svg.title-logo{
     transition: 0.3s;
 }
 
-.contanier .prayers .pray .react .rec svg:hover rect{
+.contanier .prayers .pray .react .rec:hover rect{
     fill: #669640;
 }
 
@@ -695,7 +682,7 @@ svg.title-logo{
     transition: 0.3s;
 }
 
-.contanier .prayers .pray .react .rec svg:hover path{
+.contanier .prayers .pray .react .rec:hover path{
     fill: white;
 }
 
@@ -877,7 +864,7 @@ swiper-container.skipper {
     display: flex;
     align-items: flex-start;
     gap: 8px;
-    width: 100%;
+    width: 375px;
 }
 
 swiper-slide.slider{
@@ -892,4 +879,15 @@ swiper-slide.slider{
 
 swiper-slide.slider p{
     text-align: left;
+}
+
+swiper-slide.swiper{
+    width: 195px !important;
+}
+
+swiper-slide.swiper1{
+    width: 335px !important;
+    padding: 16px;
+    border-radius: 8px;
+    background: #FFF;
 }
