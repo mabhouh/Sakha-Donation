@@ -243,6 +243,8 @@ svg.title-logo{
     height: 354px;
     flex-shrink: 0;
     border-radius: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .contanier .img-home .africe p{
@@ -253,9 +255,10 @@ svg.title-logo{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    text-align: left;
     position: absolute;
-    left: 35px;
-    top: 579px;
+    left: 16px;
+    bottom: 38px;
 }
 
 .carousel-navigation{ 
@@ -847,19 +850,6 @@ swiper-slide.next:hover p{
     color: #FFF;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 swiper-container.skipper {
     display: flex;
     align-items: flex-start;
@@ -890,4 +880,27 @@ swiper-slide.swiper1{
     padding: 16px;
     border-radius: 8px;
     background: #FFF;
+}
+
+
+
+
+
+
+
+
+
+swiper-container.img-swiper{
+    width: 335px;
+    height: 354px;
+}
+
+.img-swiper swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }

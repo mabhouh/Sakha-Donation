@@ -1,47 +1,6 @@
-        <div class="children">
-            <a href="case-details.html">
-                <div class="item">
-                    <div class="img-item">
-                        <img src="imgs/item1.png" alt="">
-                    </div>
-                    <div class="desc">
-                        <div class="xx">
-                            <p>Help Orphanage Children to thrive,<br> ..</p>
-                        </div>
-                        <div class="xxx">
-                            <p class="raised"><span>$2,379</span> fund raised from <span>$4,200</span></p>
-                            <div class="progress">
-                                <span></span>
-                            </div>
-                            <div class="donate">
-                                <p><span>1,500</span> Donators</p>
-                                <p><span>19</span> days left</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="case-details.html">
-                <div class="item">
-                    <div class="img-item">
-                        <img src="imgs/item1.png" alt="">
-                    </div>
-                    <div class="desc">
-                        <div class="xx">
-                            <p>Help Orphanage Children to thrive,<br> ..</p>
-                        </div>
-                        <div class="xxx">
-                            <p class="raised"><span>$2,379</span> fund raised from <span>$4,200</span></p>
-                            <div class="progress">
-                                <span></span>
-                            </div>
-                            <div class="donate">
-                                <p><span>1,500</span> Donators</p>
-                                <p><span>19</span> days left</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+<div class="africe">
+    <img src="imgs/africa.png" alt="">
+    <div class="a">
+        <p>Humanitarian Assistance – <br> Development Aid Africa</p>
+    </div>
+</div>
