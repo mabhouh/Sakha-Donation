@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="CSS/home.css">
+    <script src="JS/swiper.js"></script>
     <title>Sakha | Home</title>
 </head>
 <body>
@@ -101,30 +102,28 @@
             </div>
 
             <div class="africe">
-                <swiper-container class="img-swiper" pagination="true" pagination-clickable="true" navigation="false" space-between="10"
-                centered-slides="false" autoplay-delay="2000" autoplay-disable-on-interaction="false"
-                effect="cube" grab-cursor="true" cube-effect-shadow="false"
-                cube-effect-slide-shadows="false" cube-effect-shadow-scale="0.94">
-                <swiper-slide>
-                    <img src="imgs/africa.png" alt="">
-                    <p>Humanitarian Assistance – <br> Development Aid Africa</p>
-                </swiper-slide>
-
-                <swiper-slide>
-                    <img src="imgs/africa.png" alt="">
-                    <p>Humanitarian Assistance – <br> Development Aid Africa</p>
-                </swiper-slide>
-
-                <swiper-slide>
-                    <img src="imgs/africa.png" alt="">
-                    <p>Humanitarian Assistance – <br> Development Aid Africa</p>
-                </swiper-slide>
-
-                <swiper-slide>
-                    <img src="imgs/africa.png" alt="">
-                    <p>Humanitarian Assistance – <br> Development Aid Africa</p>
-                </swiper-slide>
-                </swiper-container>
+                <swiper-container init="true" class="mySwiper3" pagination="true" pagination-clickable="true" navigation="false" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                    <swiper-slide>
+                        <img src="imgs/africa.png" alt="">
+                        <p>Humanitarian Assistance – <br> Development Aid Africa</p>
+                    </swiper-slide>
+                    
+                    <swiper-slide>
+                        <img src="imgs/africa.png" alt="">
+                        <p>Humanitarian Assistance – <br> Development Aid Africa</p>
+                    </swiper-slide>
+                    
+                    <swiper-slide>
+                        <img src="imgs/africa.png" alt="">
+                        <p>Humanitarian Assistance – <br> Development Aid Africa</p>
+                    </swiper-slide>
+                    
+                    <swiper-slide>
+                        <img src="imgs/africa.png" alt="">
+                        <p>Humanitarian Assistance – <br> Development Aid Africa</p>
+                    </swiper-slide>
+                    
+                  </swiper-container>
             </div>
 
         </div>
@@ -704,6 +703,28 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
 
+
+<script>
+
+        var swiper3El = document.querySelector(".mySwiper3");
+        Object.assign(swiper3El, {
+        grabCursor: true,
+        effect: "creative",
+        creativeEffect: {
+            prev: {
+            shadow: true,
+            translate: ["-20%", 0, -1],
+            },
+            next: {
+            translate: ["100%", 0, 0],
+            },
+        },
+        });
+        swiper3El.initialize()
+</script>
+
+
+<script src="JS/swiper.js"></script>
 
 </body>
 </html>

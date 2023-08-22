@@ -1,6 +1,26 @@
-<div class="africe">
-    <img src="imgs/africa.png" alt="">
-    <div class="a">
-        <p>Humanitarian Assistance – <br> Development Aid Africa</p>
-    </div>
-</div>
+            <div class="africe">
+                <swiper-container class="img-swiper" pagination="true" pagination-clickable="true" navigation="false" space-between="10"
+                centered-slides="false" autoplay-delay="2000" autoplay-disable-on-interaction="false"
+                effect="cube" grab-cursor="true" cube-effect-shadow="false"
+                cube-effect-slide-shadows="false" cube-effect-shadow-scale="0.94">
+                <swiper-slide>
+                    <img src="imgs/africa.png" alt="">
+                    <p>Humanitarian Assistance – <br> Development Aid Africa</p>
+                </swiper-slide>
+
+                <swiper-slide>
+                    <img src="imgs/africa.png" alt="">
+                    <p>Humanitarian Assistance – <br> Development Aid Africa</p>
+                </swiper-slide>
+
+                <swiper-slide>
+                    <img src="imgs/africa.png" alt="">
+                    <p>Humanitarian Assistance – <br> Development Aid Africa</p>
+                </swiper-slide>
+
+                <swiper-slide>
+                    <img src="imgs/africa.png" alt="">
+                    <p>Humanitarian Assistance – <br> Development Aid Africa</p>
+                </swiper-slide>
+                </swiper-container>
+            </div>

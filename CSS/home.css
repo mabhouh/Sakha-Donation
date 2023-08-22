@@ -238,6 +238,11 @@ svg.title-logo{
     transition: 0.3s;
 }
 
+.africe {
+    border-radius: 8px !important;
+    overflow: hidden;
+}
+
 .contanier .img-home .africe img{
     width: 335px;
     height: 354px;
@@ -350,6 +355,7 @@ svg.title-logo{
     display: flex;
     gap: 20px;
     margin-bottom: 12px;
+    cursor: grab;
 }
 
 .contanier .urgent nav{
@@ -855,6 +861,7 @@ swiper-container.skipper {
     align-items: flex-start;
     gap: 8px;
     width: 375px;
+    cursor: grab;
 }
 
 swiper-slide.slider{
@@ -882,20 +889,13 @@ swiper-slide.swiper1{
     background: #FFF;
 }
 
-
-
-
-
-
-
-
-
-swiper-container.img-swiper{
+swiper-container.mySwiper3{
     width: 335px;
     height: 354px;
+    border-radius: 8px;
 }
 
-.img-swiper swiper-slide{
+.mySwiper3 swiper-slide{
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -903,4 +903,5 @@ swiper-container.img-swiper{
     justify-content: center;
     align-items: center;
     position: relative;
+    border-radius: 8px;
 }
