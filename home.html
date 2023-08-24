@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="CSS/home.css">
     <script src="JS/swiper.js"></script>
+    <link rel="icon" href="imgs/all.png" type="image/png">
     <title>Sakha | Home</title>
 </head>
 <body>
@@ -102,24 +103,30 @@
             </div>
 
             <div class="africe">
-                <swiper-container init="false" class="mySwiper3" pagination="true" pagination-clickable="true" navigation="false" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                <swiper-container init="false" class="mySwiper3" autoplay-delay="2500" autoplay-disable-on-interaction="false"
+                 data-swiper-options='{
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "clickable": false
+                }
+              }'>
                     <swiper-slide>
                         <img src="imgs/africa.png" alt="">
                         <p>Humanitarian Assistance – <br> Development Aid Africa</p>
                     </swiper-slide>
                     
                     <swiper-slide>
-                        <img src="imgs/africa.png" alt="">
+                        <img src="imgs/af1.jpg" alt="">
                         <p>Humanitarian Assistance – <br> Development Aid Africa</p>
                     </swiper-slide>
                     
                     <swiper-slide>
-                        <img src="imgs/africa.png" alt="">
+                        <img src="imgs/af2.avif" alt="">
                         <p>Humanitarian Assistance – <br> Development Aid Africa</p>
                     </swiper-slide>
                     
                     <swiper-slide>
-                        <img src="imgs/africa.png" alt="">
+                        <img src="imgs/af3.jpg" alt="">
                         <p>Humanitarian Assistance – <br> Development Aid Africa</p>
                     </swiper-slide>
                     
@@ -725,6 +732,5 @@
 
 
 
-<script src="JS/swiper.js"></script>
 </body>
 </html>

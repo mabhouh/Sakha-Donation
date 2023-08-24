@@ -16,3 +16,4 @@ function customizeSwiperPagination() {
         activePaginationBullet.style.backgroundColor = '#FFF';
     }
 }
+

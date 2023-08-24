@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: white;
+}
+  
+.contanier{
+    padding: 16px 20px 0 20px;
+    height: 100vh;
+    width: 375px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+}
+  
+.contanier .subtitle{
+    display: flex;
+    width: 335px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+  
+.contanier .subtitle .left{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.contanier .subtitle svg{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+  
+.contanier .subtitle svg rect{
+    transition: 0.3s;
+    cursor: pointer;
+}
+  
+.contanier .subtitle svg:hover rect{
+    fill: #669640;
+}
+  
+.contanier .subtitle svg:hover path{
+    fill: white;
+}
+  
+  .contanier .subtitle svg path{
+    transition: 0.3s;
+}
+  
+.contanier .subtitle svg:hover path{
+    transform: translateX(-4px);
+}
+  
+.contanier .subtitle h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+

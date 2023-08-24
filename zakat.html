@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sakha | Zakat</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="CSS/zakat.css">
 </head>
 <body>
@@ -20,24 +21,45 @@
                 <h2>Zakat Calculator</h2>
             </div>
         </div>
+            <swiper-container class="mySwiper" slides-per-view="3.1"
+            space-between="8" free-mode="true" data-swiper-options='{
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "clickable": false
+                }
+              }'>
+                <swiper-slide class="next active">
+                    <P>Gold</P>
+                </swiper-slide>
 
-        <div>                    
-            <ul class="pass">
-                <li class="active">Gold</li>
 
-                <li class="active1">Silver</li>
+                <swiper-slide class="next active1">
+                    <P>Silver</P> 
+                </swiper-slide>
 
-                <li class="active2">Money</li>
 
-                <li class="active3">Stocks</li>
+                <swiper-slide class="next active2">
+                    <P>Money</P>
+                </swiper-slide>
 
-                <li>Cattle</li>
 
-                <li>Medical</li>
+                <swiper-slide class="next active3">
+                    <P>Stocks</P>
+                </swiper-slide>
 
-                <li>Free professions</li>
-            </ul>
-        </div>
+
+                <swiper-slide class="next active4">
+                    <P>Cattle</P>
+                </swiper-slide>
+
+
+                <swiper-slide class="next active5">
+                    <P>Free professions</P>
+                </swiper-slide>
+            </swiper-container>
+
+
+
 
         <form method="post" class="calculator">
             <div class="a">
@@ -184,14 +206,17 @@
     </div>
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
 
 
 <script>
 
-let silver = document.querySelector(".active1");
     let gold = document.querySelector(".active");
+    let silver = document.querySelector(".active1");
     let money = document.querySelector(".active2");
     let stocks = document.querySelector(".active3");
+    let cattle = document.querySelector(".active4");
+    let free_professions = document.querySelector(".active5");
 
     let s_d_show = document.querySelector(".i");
     let g_d_hide = document.querySelector(".flex");
@@ -211,6 +236,8 @@ let silver = document.querySelector(".active1");
         silver.classList.toggle("active");
         gold.classList.remove("active");
         money.classList.remove("active");
+        cattle.classList.remove("active");
+        free_professions.classList.remove("active");
         g_d_hide.classList.toggle("hide");
         width_full.classList.toggle("w-f");
         svg_none.classList.toggle("hide");
@@ -218,7 +245,11 @@ let silver = document.querySelector(".active1");
 
     gold.onclick = function (){
         gold.classList.toggle("active");
+        stocks.classList.remove("active");
+        money.classList.remove("active");
         silver.classList.remove("active");
+        cattle.classList.remove("active");
+        free_professions.classList.remove("active");
         g_d_hide.classList.remove("hide");
         s_d_show.classList.remove("show");
     }
@@ -227,6 +258,9 @@ let silver = document.querySelector(".active1");
         money.classList.toggle("active");
         silver.classList.remove("active");
         gold.classList.remove("active");
+        stocks.classList.remove("active");
+        cattle.classList.remove("active");
+        free_professions.classList.remove("active");
     }
 
     stocks.onclick = function (){
@@ -234,6 +268,26 @@ let silver = document.querySelector(".active1");
         money.classList.remove("active");
         silver.classList.remove("active");
         gold.classList.remove("active");
+        cattle.classList.remove("active");
+        free_professions.classList.remove("active");
+    }
+
+    cattle.onclick = function (){
+        cattle.classList.toggle("active");
+        money.classList.remove("active");
+        silver.classList.remove("active");
+        gold.classList.remove("active");
+        free_professions.classList.remove("active");
+        stocks.classList.remove("active");
+    }
+
+    free_professions.onclick = function (){
+        free_professions.classList.toggle("active");
+        money.classList.remove("active");
+        silver.classList.remove("active");
+        gold.classList.remove("active");
+        cattle.classList.remove("active");
+        stocks.classList.remove("active");
     }
 
 </script>
