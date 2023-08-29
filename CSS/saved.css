@@ -8,7 +8,7 @@ body {
     display: grid;
     place-items: center;
     margin: 0;
-    background-color: rgb(224, 94, 94);
+    background-color: white;
 }
 
 .contanier{

@@ -417,6 +417,7 @@ svg.title-logo{
     flex-shrink: 0;
     background-repeat: no-repeat;
     background-size:cover ;
+    border-radius: 8px;
 }
 
 .contanier .item .desc{

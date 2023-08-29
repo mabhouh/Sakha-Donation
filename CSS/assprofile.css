@@ -9,7 +9,7 @@ body {
     display: grid;
     place-items: center;
     margin: 0;
-    background-color: #FFF;
+    background-color: white;
 }
 
 .contanier{
